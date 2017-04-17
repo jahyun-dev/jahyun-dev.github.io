@@ -10,7 +10,7 @@
     <atom:link href="http://jahyun-dev.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>아파치 카프카 1 : 메시지 저장 구조, 파티션 설정</title>
+      <title>아파치 카프카 스터디 1</title>
       <link>http://jahyun-dev.github.io/post/kafka-topic-partition/</link>
       <pubDate>Sat, 15 Apr 2017 18:00:00 +0900</pubDate>
       
