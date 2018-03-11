@@ -1,394 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="no-referrer">
-    <base href="http://jahyun-dev.github.io/">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://example.com"><h1 class="title is-4">Hu | Core</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">아파치 카프카 스터디 1</h1>
+    <h2 class="subtitle is-5">April 15, 2017 by </h2>
     
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
-
-    <link rel="icon" type="image/png" href="http://jahyun-dev.github.io/favicon_16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="http://jahyun-dev.github.io/favicon_32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://jahyun-dev.github.io/favicon_128x128.png" sizes="128x128">
-
-    <title>
+    <div class="content">
       
-      
-         아파치 카프카 1 : 메시지 저장 구조, 파티션 설정 
-      
-    </title>
-    <link rel="canonical" href="http://jahyun-dev.github.io/post/kafka-topic-partition/">
-
-    <style>
-  * {
-    border:0;
-    font:inherit;
-    font-size:100%;
-    vertical-align:baseline;
-    margin:0;
-    padding:0;
-    color: black;
-  }
-
-  body {
-    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
-    font-size:17px;
-    line-height:160%;
-    color:#1d1313;
-    max-width:700px;
-    margin:auto;
-  }
-
-  p {
-    margin: 20px 0;
-  }
-
-  a img {
-    border:none;
-  }
-
-  img {
-    margin: 10px auto 10px auto;
-    max-width: 100%;
-    display: block;
-  }
-
-  pre, code {
-    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    background-color: #f7f7f7;
-  }
-
-  code {
-    font-size: 12px;
-    padding: 4px;
-  }
-
-  pre {
-    margin-top: 0;
-    margin-bottom: 16px;
-    word-wrap: normal;
-    padding: 16px;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-  }
-
-  pre>code {
-    padding: 0;
-    margin: 0;
-    font-size: 100%;
-    word-break: normal;
-    white-space: pre;
-    background: transparent;
-    border: 0;
-  }
-
-  pre code {
-    display: inline;
-    max-width: auto;
-    padding: 0;
-    margin: 0;
-    overflow: visible;
-    line-height: inherit;
-    word-wrap: normal;
-    background-color: transparent;
-    border: 0;
-  }
-
-  pre code::before,
-  pre code::after {
-    content: normal;
-  }
-
-  em,q,em,dfn {
-    font-style:italic;
-  }
-
-  .sans,html .gist .gist-file .gist-meta {
-    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
-  }
-
-  .mono,pre,code,tt,p code,li code {
-    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-  }
-
-  .heading,.serif,h1,h2,h3 {
-    font-family:"Old Standard TT",serif;
-  }
-
-  strong {
-    font-weight:600;
-  }
-
-  q:before {
-    content:"\201C";
-  }
-
-  q:after {
-    content:"\201D";
-  }
-
-  del,s {
-    text-decoration:line-through;
-  }
-
-  blockquote {
-    font-family:"Old Standard TT",serif;
-    text-align:center;
-    padding:50px;
-  }
-
-  blockquote p {
-    display:inline-block;
-    font-style:italic;
-  }
-
-  blockquote:before,blockquote:after {
-    font-family:"Old Standard TT",serif;
-    content:'\201C';
-    font-size:35px;
-    color:#403c3b;
-  }
-
-  blockquote:after {
-    content:'\201D';
-  }
-
-  hr {
-    width:40%;
-    height: 1px;
-    background:#403c3b;
-    margin: 25px auto;
-  }
-
-  h1 {
-    font-size:35px;
-  }
-
-  h2 {
-    font-size:28px;
-  }
-
-  h3 {
-    font-size:22px;
-    margin-top:18px;
-  }
-
-  h1 a,h2 a,h3 a {
-    text-decoration:none;
-  }
-
-  h1,h2 {
-    margin-top:28px;
-  }
-
-  #sub-header, time {
-    color:#403c3b;
-    font-size:13px;
-  }
-
-  #sub-header {
-    margin: 0 4px;
-  }
-
-  #nav h1 a {
-    font-size:35px;
-    color:#1d1313;
-    line-height:120%;
-  }
-
-  .posts_listing a,#nav a {
-    text-decoration: none;
-  }
-
-  li {
-    margin-left: 20px;
-  }
-
-  ul li {
-    margin-left: 5px;
-  }
-
-  ul li {
-    list-style-type: none;
-  }
-  ul li:before {
-    content:"\00BB \0020";
-  }
-
-  #nav ul li:before, .posts_listing li:before {
-    content:'';
-    margin-right:0;
-  }
-
-  #content {
-    text-align:left;
-    width:100%;
-    font-size:15px;
-    padding:60px 0 80px;
-  }
-
-  #content h1,#content h2 {
-    margin-bottom:5px;
-  }
-
-  #content h2 {
-    font-size:25px;
-  }
-
-  #content .entry-content {
-    margin-top:15px;
-  }
-
-  #content time {
-    margin-left:3px;
-  }
-
-  #content h1 {
-    font-size:30px;
-  }
-
-  .highlight {
-    margin: 10px 0;
-  }
-
-  .posts_listing {
-    margin:0 0 50px;
-  }
-
-  .posts_listing li {
-    margin:0 0 25px 15px;
-  }
-
-  .posts_listing li a:hover,#nav a:hover {
-    text-decoration: underline;
-  }
-
-  #nav {
-    text-align:center;
-    position:static;
-    margin-top:60px;
-  }
-
-  #nav ul {
-    display: table;
-    margin: 8px auto 0 auto;
-  }
-
-  #nav li {
-    list-style-type:none;
-    display:table-cell;
-    font-size:15px;
-    padding: 0 20px;
-  }
-
-  #links {
-    margin: 50px 0 0 0;
-  }
-
-  #links :nth-child(2) {
-    float:right;
-  }
-
-  #not-found {
-    text-align: center;
-  }
-
-  #not-found a {
-    font-family:"Old Standard TT",serif;
-    font-size: 200px;
-    text-decoration: none;
-    display: inline-block;
-    padding-top: 225px;
-  }
-
-  @media (max-width: 750px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:28px;
-    }
-
-    #nav li {
-      font-size:13px;
-      padding: 0 15px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:50px;
-      font-size:14px;
-    }
-
-    #content h1 {
-      font-size:25px;
-    }
-
-    #content h2 {
-      font-size:22px;
-    }
-
-    .posts_listing li div {
-      font-size:12px;
-    }
-  }
-
-  @media (max-width: 400px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:22px;
-    }
-
-    #nav li {
-      font-size:12px;
-      padding: 0 10px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:20px;
-      font-size:12px;
-    }
-
-    #content h1 {
-      font-size:20px;
-    }
-
-    #content h2 {
-      font-size:18px;
-    }
-
-    .posts_listing li div{
-      font-size:12px;
-    }
-  }
-</style>
-
-
-    
-  </head>
-
-  <body>
-    <section id=nav>
-      <h1><a href="http://jahyun-dev.github.io/">JH LOG</a></h1>
-      <ul>
-        
-      </ul>
-    </section>
-
-
 
 <p>카프카를 서비스에 도입하며 스터디한 내용을 하나하나 정리하려 합니다. 정확하지 않은 부분이 많으니 고려하여 읽어주시길 바랍니다. 수정해야 할 부분은 댓글로 남겨주시면 큰 도움이 됩니다.</p>
 
@@ -461,27 +99,55 @@
 <li><a href="https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-writes-second-three-cheap-machines">Benchmarking Apache Kafka: 2 Million Writes Per Second</a></li>
 </ul>
 
-<br/>
-<br/>
-<div id="disqus_thread"></div>
-disqs
+    </div>
+    
+        <div class="nav-left">
+    <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fexample.com%2fpost%2fkafka-topic-partition%2f" title="Share on Facebook" target="_blank"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://plus.google.com/share?url=https%3a%2f%2fexample.com%2fpost%2fkafka-topic-partition%2f" title="Share on Google+" target="_blank"><span class="fa fa-google-plus fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fexample.com%2fpost%2fkafka-topic-partition%2f" title="Share on LinkedIn" target="_blank"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://twitter.com/home?status=%ec%95%84%ed%8c%8c%ec%b9%98%20%ec%b9%b4%ed%94%84%ec%b9%b4%20%ec%8a%a4%ed%84%b0%eb%94%94%201 - https%3a%2f%2fexample.com%2fpost%2fkafka-topic-partition%2f" title="Tweet this" target="_blank"><span class="fa fa-twitter fa-2x"></span></a>
+    <a class="nav-item" href="http://www.reddit.com/submit?url=https%3a%2f%2fexample.com%2fpost%2fkafka-topic-partition%2f&title=%ec%95%84%ed%8c%8c%ec%b9%98%20%ec%b9%b4%ed%94%84%ec%b9%b4%20%ec%8a%a4%ed%84%b0%eb%94%94%201" title="Share on Reddit" target="_blank"><span class="fa fa-reddit-alien fa-2x" aria-hidden="true"></span></a>
+    
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <aside><div id="disqus_thread"></div></aside>
+    <script type="text/javascript">
+      var disqus_shortname = 'shortname';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; 2017 | Follow on <a href="https://twitter.com/mgjohansen" target="_blank">Twitter</a> | <a href="https://github.com/mgjohansen/hucore.git" target="_blank">Hucore theme</a> & <a href="http://gohugo.io" target="_blank">Hugo</a> ♥</p>
+  </div>
+</section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js" integrity="sha256-+bhVTaRmJ/c07eV80nU8gD2cBBF0rYkf1txqXlrbvb0=" crossorigin="anonymous"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
 <script>
-
-
-
-
-
-(function() { 
-	var d = document, s = d.createElement('script');
-	s.src = 'https://jhlog.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-})();
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'trackingcode', 'auto');
+ga('send', 'pageview');
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                
+<script async src='//www.google-analytics.com/analytics.js'></script>
 
-  
+
+
 </body>
-</html>
-
