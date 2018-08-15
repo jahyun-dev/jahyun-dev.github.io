@@ -3,13 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jahyun-dev.github.io/post/cryptocurrency-1/</loc>
+    <loc>https://jahyun-dev.github.io/posts/gradle-1/</loc>
+    <lastmod>2018-08-14T18:52:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jahyun-dev.github.io/posts/cryptocurrency-1/</loc>
     <lastmod>2018-03-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jahyun-dev.github.io/post/kafka-topic-partition/</loc>
+    <loc>https://jahyun-dev.github.io/posts/kafka-topic-partition/</loc>
     <lastmod>2017-04-15T18:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jahyun-dev.github.io/tags/build-tools/</loc>
+    <lastmod>2018-08-14T18:52:16+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -19,18 +30,31 @@
   
   <url>
     <loc>https://jahyun-dev.github.io/</loc>
-    <lastmod>2018-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-14T18:52:16+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jahyun-dev.github.io/post/</loc>
-    <lastmod>2018-03-11T00:00:00+00:00</lastmod>
+    <loc>https://jahyun-dev.github.io/tags/gradle/</loc>
+    <lastmod>2018-08-14T18:52:16+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jahyun-dev.github.io/posts/</loc>
+    <lastmod>2018-08-14T18:52:16+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jahyun-dev.github.io/tags/programming/</loc>
+    <lastmod>2018-08-14T18:52:16+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jahyun-dev.github.io/tags/</loc>
+    <lastmod>2018-08-14T18:52:16+09:00</lastmod>
     <priority>0</priority>
   </url>
   
