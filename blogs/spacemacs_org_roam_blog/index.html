@@ -32,7 +32,117 @@
 </div>
 
 <main>
-<p>이건 블로그 셋업입니다.</p>
+<p>이맥스와 이맥스의 모드를 이용해 블로그를 만들어보자.
+<a href="https://roamresearch.com/">Roam Research</a>라는 노트앱을 쓰다보니 조금 더 본격적으로 정리해보고 싶어 환경을 찾아보았다.
+많은 기능을 제공하는 노트앱이 이미 많지만, 조금 더 재밌게 해보고 싶어 평소 관심있던 <a href="/notes/20211230013723-emacs/">emacs</a>를 써보기로 한다.</p>
+<p>emacs 배포판은 <a href="/notes/20211230015309-spacemacs/">spacemacs</a>를 사용한다. 맨땅에서 시작하기를 시도했으나 도저히 안될 것 같아 포기한다.</p>
+<h2 id="모드">모드</h2>
+<p>roam-research와 비슷한 경험을 만들어보고 싶어 아래 모드를 설치하기로 한다.</p>
+<ul>
+<li>org + roam-research와 같은 백링크 지원
+<ul>
+<li><a href="https://www.orgroam.com/">Org-roam</a></li>
+</ul>
+</li>
+<li>markdown / hugo로 내보내기
+<ul>
+<li><a href="https://ox-hugo.scripter.co/">ox-hugo</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="설정">설정</h2>
+<p>spacemacs는 레이어를 추가하면 간단하게 모드 세팅이 되는 듯 하다.</p>
+<p><code>SPC f e d</code> 를 눌러 init.el 문서를 열어  <code>dotspacemacs/layers</code> 함수에 아래 코드를 추가한다</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(org :variables
+     org-enable-roam-support <span style="color:#66d9ef">t</span>
+     org-enable-hugo-support <span style="color:#66d9ef">t</span>)
+</code></pre></div><p>org 레이어가 추가되며, ox-hugo와 org-roam도 추가 설치된다.</p>
+<p>org-roam 관련 설정을 <code>dotspacemacs/user-config</code> 에 추가한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">  (use-package org-roam
+    :after org
+    :ensure <span style="color:#66d9ef">t</span>
+    :init
+    (setq org-directory (file-truename <span style="color:#e6db74">&#34;~/org&#34;</span>)
+          org-roam-directory (file-truename <span style="color:#e6db74">&#34;~/org/roam&#34;</span>)
+          org-roam-completion-everywhere <span style="color:#66d9ef">t</span>)
+    :config
+    (org-roam-db-autosync-mode)
+    (org-roam-setup)
+
+    (setq org-roam-capture-templates
+          <span style="color:#f92672">&#39;</span>(
+            (<span style="color:#e6db74">&#34;n&#34;</span> <span style="color:#e6db74">&#34;notes&#34;</span> plain <span style="color:#e6db74">&#34;%?&#34;</span>
+           :target (file+head <span style="color:#e6db74">&#34;note/%&lt;%Y%m%d%H%M%S&gt;-${slug}.org&#34;</span>
+                              <span style="color:#e6db74">&#34;#+SETUPFILE:./hugo_setup.org
+</span><span style="color:#e6db74">#+HUGO_SLUG: ${slug}
+</span><span style="color:#e6db74">#+HUGO_SECTION: notes
+</span><span style="color:#e6db74">#+TITLE: ${title}\n&#34;</span>)
+           :unnarrowed <span style="color:#66d9ef">t</span>)
+            (<span style="color:#e6db74">&#34;b&#34;</span> <span style="color:#e6db74">&#34;blogs&#34;</span> plain <span style="color:#e6db74">&#34;%?&#34;</span>
+             :target (file+head <span style="color:#e6db74">&#34;blog/%&lt;%Y%m%d%H%M%S&gt;-${slug}.org&#34;</span>
+                                <span style="color:#e6db74">&#34;#+SETUPFILE:./hugo_setup.org
+</span><span style="color:#e6db74">#+HUGO_SLUG: ${slug}
+</span><span style="color:#e6db74">#+HUGO_SECTION: blog
+</span><span style="color:#e6db74">#+TITLE: ${title}\n&#34;</span>)
+             :unarrowed <span style="color:#66d9ef">t</span>)
+             (<span style="color:#e6db74">&#34;p&#34;</span> <span style="color:#e6db74">&#34;private&#34;</span> plain <span style="color:#e6db74">&#34;%?&#34;</span>
+              :target (file+head <span style="color:#e6db74">&#34;private/%&lt;%Y%m%d%H%M%S&gt;-${slug}.org&#34;</span>
+                                 <span style="color:#e6db74">&#34;#+TITLE: ${title}\n&#34;</span>)
+              :unnarrowed <span style="color:#66d9ef">t</span>)
+             )
+          )
+    )
+</code></pre></div><p><a href="https://github.com/jwiegley/use-package">use-package</a>를 사용해 패키지 관련 설정을 해보자.
+org-directory, org-roam-directory를 미리 만들어두고 세팅해둔다.</p>
+<p>org-roam의 template으로 note, blog, private을 설정했다. note는 wiki 개념으로, blog는 블로그 발행글이다.
+private은 개인 보관용으로 export하지 않는다.</p>
+<p>template 설정 시 HUGO_SLUG, HUGO_SECTION과 같이 필요한 사항을 템플릿에 포함시킬 수 있다.
+hugo 관련 설정은 ox-hugo에서 볼 수 있다.</p>
+<p>hugo_setup 파일 설정을 추가하면 관련 설정을 hugo_setup 파일에서 가져오는 듯 하다.</p>
+<p>ox-hugo 모드 설정을 한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(use-package ox-hugo
+  :after org
+  :ensure <span style="color:#66d9ef">t</span>
+  :after ox
+  :custom
+  (org-hugo-base-dir (file-truename <span style="color:#e6db74">&#34;~/blog&#34;</span>)))
+</code></pre></div><p>export 할 hugo 블로그 디렉토리를 설정한다.</p>
+<p>org-roam 관련 설정을 추가하자.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(with-eval-after-load <span style="color:#e6db74">&#39;org-roam</span>
+  (defun koo/sync-hugo-tags ()
+    <span style="color:#e6db74">&#34;org의 filetags를 설정한 경우, 저장 시 이를 hugo_tags 설정에도 반영한다&#34;</span>
+    (interactive)
+    (let ((filetags (<span style="color:#a6e22e">car</span> (<span style="color:#a6e22e">cdr</span> (<span style="color:#a6e22e">car</span> (org-collect-keywords <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;filetags&#34;</span>))))))
+          )
+      (if filetags
+          (org-roam-set-keyword <span style="color:#e6db74">&#34;hugo_tags&#34;</span>
+                                (<span style="color:#a6e22e">mapconcat</span> <span style="color:#e6db74">&#39;identity</span>
+                                           (<span style="color:#a6e22e">cdr</span> (split-string filetags <span style="color:#e6db74">&#34;:&#34;</span>))
+                                           <span style="color:#e6db74">&#34; &#34;</span>))
+        (org-roam-erase-keyword <span style="color:#e6db74">&#34;hugo_tags&#34;</span>))
+      )
+    )
+
+  (defun koo/org-roam-export-all ()
+    <span style="color:#e6db74">&#34;org-roam 디렉토리 문서 중 hugo_setup.org를 포함한 문서를 모두 내보내기한다&#34;</span>
+    (interactive)
+    (org-roam-update-org-id-locations)
+    (dolist (f (org-roam-list-files))
+      (with-current-buffer (find-file f)
+        (when (s-contains? <span style="color:#e6db74">&#34;hugo_setup.org&#34;</span> (<span style="color:#a6e22e">buffer-string</span>))
+          (org-hugo-export-wim-to-md)
+          ))))
+
+  (add-hook <span style="color:#e6db74">&#39;before-save-hook</span> <span style="color:#e6db74">&#39;koo/sync-hugo-tags</span>)
+  )
+</code></pre></div><p>이제 설정을 리로드한다.</p>
+<h2 id="문서-작성">문서 작성</h2>
+<p>org-roam 문서를 추가해보자. <code>SPC a o r c</code> 로 지정된 템플릿을 선택해 문서를 추가할 수 있다.
+작성이 완료되면 <code>koo/org-roam-export-all</code> 함수를 호출해 내보내기 한다.</p>
+<h2 id="블로그-생성">블로그 생성</h2>
+<p>hugo 문서를 참고하자.</p>
+<h2 id="결과">결과</h2>
+<p>생각보다 문서 작성하기 편하고 좋다. 자주 쓸듯.</p>
 
 </main>
 
