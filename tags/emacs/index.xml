@@ -6,11 +6,11 @@
     <description>Recent content in emacs on DEV-LOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 06 Jan 2022 22:27:38 +0900</lastBuildDate><atom:link href="https://jahyun-dev.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Jan 2021 10:00:00 +0000</lastBuildDate><atom:link href="https://jahyun-dev.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>org-roam</title>
       <link>https://jahyun-dev.github.io/notes/20211230004121-org_roam/</link>
-      <pubDate>Thu, 06 Jan 2022 22:27:38 +0900</pubDate>
+      <pubDate>Tue, 05 Jan 2021 10:00:00 +0000</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/20211230004121-org_roam/</guid>
       <description>설정 아래 자료를 참고하여 설정한다
