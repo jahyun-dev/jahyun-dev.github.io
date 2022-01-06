@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>spacemacs | DEV-LOG</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/tags">Tags</a></li>
+      
+      <li><a href="/notes">Notes</a></li>
+      
+      <li><a href="/blogs">Blogs</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">spacemacs</span></h1>
+<h2 class="author">[koo]</h2>
+<h2 class="date">2022/01/06</h2>
+</div>
+
+<main>
+<h2 id="파일-조작">파일 조작</h2>
+<h2 id="projectile">Projectile</h2>
+<p><a href="https://github.com/bbatsov/projectile">GitHub - bbatsov/projectile: Project Interaction Library for Emacs</a></p>
+<h2 id="옵션">옵션</h2>
+<h3 id="폰트-사이즈-수정">폰트 사이즈 수정</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun dotspacemacs/init ()
+(setq-default
+ dotspacemacs-startup-lists <span style="color:#f92672">&#39;</span>(recents bookmarks projects)
+ dotspacemacs-default-font <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;SourceCode Pro&#34;</span>
+                             :size <span style="color:#ae81ff">18</span>
+                             :weight normal
+                             :width normal
+                             :powerline-offset <span style="color:#ae81ff">2</span>))
+</code></pre></div>
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+

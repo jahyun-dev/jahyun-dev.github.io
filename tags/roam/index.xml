@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>roam on DEV-LOG</title>
+    <link>https://jahyun-dev.github.io/tags/roam/</link>
+    <description>Recent content in roam on DEV-LOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <lastBuildDate>Thu, 06 Jan 2022 02:00:09 +0900</lastBuildDate><atom:link href="https://jahyun-dev.github.io/tags/roam/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>org-roam</title>
+      <link>https://jahyun-dev.github.io/notes/20211230004121-org_roam/</link>
+      <pubDate>Thu, 06 Jan 2022 02:00:09 +0900</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/20211230004121-org_roam/</guid>
+      <description>설정 아래 자료를 참고하여 설정한다
+V2 and spacemacs - #5 by Gp741 - Requests - Org-roam
+(use-package org-roam :after org :ensure t :custom (org-roam-directory (file-truename &amp;#34;~/orgRoam&amp;#34;) ) (org-roam-completion-everywhere t) :config (org-roam-db-autosync-mode) ) 내보내기 Export org-roam backlinks with Gohugo | Ben Mezger 문서를 참고해서 내보내기 할 수 있다.
+전체 내보내기 참고
+Ox-hugo export all roam to Hugo | Ben Mezger
+(defun benmezger/org-roam-export-all () &amp;#34;Re-exports all Org-roam files to Hugo markdown.&amp;#34; (interactive) (dolist (f (org-roam--list-all-files)) (with-current-buffer (find-file f) (when (s-contains?</description>
+    </item>
+    
+  </channel>
+</rss>

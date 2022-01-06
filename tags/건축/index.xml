@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>건축 on DEV-LOG</title>
+    <link>https://jahyun-dev.github.io/tags/%EA%B1%B4%EC%B6%95/</link>
+    <description>Recent content in 건축 on DEV-LOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <lastBuildDate>Thu, 06 Jan 2022 02:00:08 +0900</lastBuildDate><atom:link href="https://jahyun-dev.github.io/tags/%EA%B1%B4%EC%B6%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IFC</title>
+      <link>https://jahyun-dev.github.io/notes/20211230165450-ifc/</link>
+      <pubDate>Thu, 06 Jan 2022 02:00:08 +0900</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/20211230165450-ifc/</guid>
+      <description>Industry Foundation Classes IFC는 BIM의 표준 데이터 교환 포맷이다. 건축물의 전체 생애 주기에 걸친 모든 정보를 교환, 공유할 수 있도록 만들어졌다.
+IFC 문서 IFC4 Documentation
+EXPRESS EXPRESS는 표준 데이터 모델링 언어다. STEP에 대한 ISO 표준이다.
+SCHEMA Family; ENTITY Person ABSTRACT SUPERTYPE OF (ONEOF (Male, Female)); name: STRING; mother: OPTIONAL Female; father: OPTIONAL Male; END_ENTITY; ENTITY Female SUBTYPE OF (Person); END_ENTITY; ENTITY Male SUBTYPE of (Person); END_ENTITY; END_SCHEMA; STEP STEP(ISO 10303)은 제품 제조 정보의 데이터 교환을 위한 ISO 표준이다.</description>
+    </item>
+    
+  </channel>
+</rss>

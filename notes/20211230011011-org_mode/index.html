@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>org-mode | DEV-LOG</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/tags">Tags</a></li>
+      
+      <li><a href="/notes">Notes</a></li>
+      
+      <li><a href="/blogs">Blogs</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">org-mode</span></h1>
+<h2 class="author">[koo]</h2>
+<h2 class="date">2022/01/06</h2>
+</div>
+
+<main>
+<h2 id="참고자료">참고자료</h2>
+<ul>
+<li><a href="https://orgmode.org/">Org mode for Emacs</a></li>
+<li><a href="http://doc.norang.ca/org-mode.html">Org Mode - Organize Your Life In Plain Text!</a></li>
+<li><a href="http://cachestocaches.com/2016/9/my-workflow-org-agenda/">My Workflow with Org-Agenda</a></li>
+</ul>
+<h2 id="설정">설정</h2>
+<h4 id="디렉토리-설정">디렉토리 설정</h4>
+<p><a href="/notes/20211230015309-spacemacs/">spacemacs </a>를 사용하는 경우 user-config 하위에 아래와 같은 설정을 추가해야 한다. (참고: <a href="https://www.spacemacs.org/layers/+emacs/org/README.html#important-note">https://www.spacemacs.org/layers/+emacs/org/README.html#important-note</a>)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(with-eval-after-load <span style="color:#e6db74">&#39;org</span>
+  (setq org-directory <span style="color:#e6db74">&#34;~/org&#34;</span>))
+</code></pre></div><h4 id="agenda">agenda</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(setq org-agenda-files (quote (<span style="color:#e6db74">&#34;~/org/agenda&#34;</span>)))
+</code></pre></div><p>참고자료</p>
+<h4 id="journal">journal</h4>
+<p>org-journal을 설치한다</p>
+<h2 id="todo">todo</h2>
+<ul>
+<li>* 헤드라인에 TODO 를 붙이면 추가된다</li>
+</ul>
+<h2 id="agenda">agenda</h2>
+<ul>
+<li>다양한 종류의 아젠다를 만들고 이를 하나 또는 여러 org 문서에서 수집, 관리한다</li>
+</ul>
+<h2 id="jorunal">jorunal</h2>
+<p>org-journal을 사용해 저널 관리 시스템을 만들 수 있다</p>
+<h2 id="org-roam--20211230004121-org-roam-dot-md"><a href="/notes/20211230004121-org_roam/">org-roam</a></h2>
+<p>roamresearch 와 같은 포맷으로 문서를 작성할 수 있다</p>
+<h2 id="static-사이트-생성">static 사이트 생성</h2>
+<p><a href="https://github.com/kaushalmodi/ox-hugo">ox-hugo</a>로 org를 export 할 수 있다. spacemacs는 아래처럼 추가한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(org :variables
+     org-enable-hugo-support <span style="color:#66d9ef">t</span>)
+</code></pre></div><p>참고자료</p>
+<ul>
+<li><a href="https://seds.nl/notes/export%5Forg%5Froam%5Fbacklinks%5Fwith%5Fgohugo/">Export org-roam backlinks with Gohugo | Ben Mezger</a></li>
+</ul>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+

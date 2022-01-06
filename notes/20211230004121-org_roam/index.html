@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>org-roam | DEV-LOG</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/tags">Tags</a></li>
+      
+      <li><a href="/notes">Notes</a></li>
+      
+      <li><a href="/blogs">Blogs</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">org-roam</span></h1>
+<h2 class="author">[koo]</h2>
+<h2 class="date">2022/01/06</h2>
+</div>
+
+<main>
+<h2 id="설정">설정</h2>
+<p>아래 자료를 참고하여 설정한다</p>
+<p><a href="https://org-roam.discourse.group/t/v2-and-spacemacs/1676/5">V2 and spacemacs - #5 by Gp741 - Requests - Org-roam</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package org-roam
+:after org
+:ensure <span style="color:#66d9ef">t</span>
+:custom
+(org-roam-directory  (file-truename <span style="color:#e6db74">&#34;~/orgRoam&#34;</span>) )
+(org-roam-completion-everywhere <span style="color:#66d9ef">t</span>)
+:config
+(org-roam-db-autosync-mode)
+)
+</code></pre></div><h2 id="내보내기">내보내기</h2>
+<p><a href="https://seds.nl/notes/export%5Forg%5Froam%5Fbacklinks%5Fwith%5Fgohugo/">Export org-roam backlinks with Gohugo | Ben Mezger</a> 문서를 참고해서 내보내기 할 수 있다.</p>
+<p>전체 내보내기 참고</p>
+<p><a href="https://seds.nl/notes/ox%5Fhugo%5Fexport%5Fall%5Froam%5Fto%5Fhugo/">Ox-hugo export all roam to Hugo | Ben Mezger</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun benmezger/org-roam-export-all ()
+  <span style="color:#e6db74">&#34;Re-exports all Org-roam files to Hugo markdown.&#34;</span>
+  (interactive)
+  (dolist (f (org-roam--list-all-files))
+    (with-current-buffer (find-file f)
+      (when (s-contains? <span style="color:#e6db74">&#34;SETUPFILE&#34;</span> (<span style="color:#a6e22e">buffer-string</span>))
+        (org-hugo-export-wim-to-md)))))
+</code></pre></div><p>저장할 때 filetags와 hugo_tags 싱크하기</p>
+<h2 id="참고자료">참고자료</h2>
+<ul>
+<li><a href="https://www.orgroam.com/manual.html">Org-roam User Manual</a></li>
+<li><a href="https://en.m.wikipedia.org/wiki/Zettelkasten">Zettelkasten - Wikipedia</a></li>
+<li><a href="https://www.lucacambiaghi.com/posts/discovering-org-roam.html">Discover org roam - lucacambiaghi</a></li>
+</ul>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+

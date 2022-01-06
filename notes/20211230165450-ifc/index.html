@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IFC | DEV-LOG</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/tags">Tags</a></li>
+      
+      <li><a href="/notes">Notes</a></li>
+      
+      <li><a href="/blogs">Blogs</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">IFC</span></h1>
+<h2 class="author">[koo]</h2>
+<h2 class="date">2022/01/06</h2>
+</div>
+
+<main>
+<h2 id="industry-foundation-classes">Industry Foundation Classes</h2>
+<p>IFC는 <a href="/notes/20211230165714-bim/">BIM</a>의 표준 데이터 교환 포맷이다. 건축물의 전체 생애 주기에 걸친 모든 정보를 교환, 공유할 수 있도록 만들어졌다.</p>
+<h2 id="ifc-문서">IFC 문서</h2>
+<p><a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2%5FTC1/HTML/">IFC4 Documentation</a></p>
+<h2 id="express">EXPRESS</h2>
+<p><a href="https://en.wikipedia.org/wiki/EXPRESS%5F(data%5Fmodeling%5Flanguage)">EXPRESS</a>는 표준 데이터 모델링 언어다. STEP에 대한 ISO 표준이다.</p>
+<pre tabindex="0"><code class="language-express" data-lang="express">SCHEMA Family;
+
+ENTITY Person
+   ABSTRACT SUPERTYPE OF (ONEOF (Male, Female));
+     name: STRING;
+     mother: OPTIONAL Female;
+     father: OPTIONAL Male;
+END_ENTITY;
+
+ENTITY Female
+   SUBTYPE OF (Person);
+END_ENTITY;
+
+ENTITY Male
+   SUBTYPE of (Person);
+END_ENTITY;
+
+END_SCHEMA;
+</code></pre><h2 id="step">STEP</h2>
+<p><a href="https://en.wikipedia.org/wiki/ISO%5F10303">STEP(ISO 10303)</a>은 제품 제조 정보의 데이터 교환을 위한 ISO 표준이다. CAD 및 관련 정보에서 3D 개체를 나타낼 수 있다.</p>
+<h2 id="참고자료">참고자료</h2>
+<ul>
+<li><a href="https://www.buildingsmart.org/">buildingSMART</a></li>
+<li><a href="https://sites.google.com/site/bimprinciple/in-the-news/ifcjeongbomodel-edaehangandanhanseolmyeong">IFC 정보모델에 대한 원리적 이해 - The BIM principle and philosophy</a></li>
+<li><a href="https://www.ifcwiki.org/index.php?title=IFC%5FWiki">IFC Wiki</a></li>
+</ul>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+
