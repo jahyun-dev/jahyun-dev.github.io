@@ -6,11 +6,11 @@
     <description>Recent content in Notes on DEV-LOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 06 Jan 2022 22:15:42 +0900</lastBuildDate><atom:link href="https://jahyun-dev.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jan 2022 22:27:39 +0900</lastBuildDate><atom:link href="https://jahyun-dev.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BIM</title>
       <link>https://jahyun-dev.github.io/notes/20211230165714-bim/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:42 +0900</pubDate>
+      <pubDate>Thu, 06 Jan 2022 22:27:39 +0900</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/20211230165714-bim/</guid>
       <description>BIM(Building Information Modeling)  3D를 사용해 건설 분야 시설물의 설계, 시공 운영에 필요한 정보 모델을 작성한다 벽, 슬래브, 문 등의 개별 객체에 가격, 수명 등의 값을 저장하는 것이 가능하다 건축물의 견적을 뽑아보거나, 공종 시 오류 발생 여부 등을 시뮬레이션 하거나, 유지 보수 시 정보 체크에도 사용할 수 있다 일정 계획, 비용 견적, 시뮬레이션, 위험 분석, 협업, 효율적 시설 관리 등이 가능하다  학습 곡선이 높고 복잡하므로 적용 시 시간이 걸린다</description>
@@ -19,7 +19,7 @@
     <item>
       <title>2021-독서</title>
       <link>https://jahyun-dev.github.io/notes/2021_%EB%8F%85%EC%84%9C/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:41 +0900</pubDate>
+      <pubDate>Thu, 06 Jan 2022 22:27:38 +0900</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/2021_%EB%8F%85%EC%84%9C/</guid>
       <description>개발자로 살아남기 </description>
@@ -28,7 +28,7 @@
     <item>
       <title>emacs</title>
       <link>https://jahyun-dev.github.io/notes/20211230013723-emacs/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:41 +0900</pubDate>
+      <pubDate>Thu, 06 Jan 2022 22:27:38 +0900</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/20211230013723-emacs/</guid>
       <description>Frame window는 buffer를 보여주기 위한 창. window는 frame으로 묶임.
@@ -39,7 +39,7 @@ Directory Variable EmacsWiki: Directory Variables</description>
     <item>
       <title>org-roam</title>
       <link>https://jahyun-dev.github.io/notes/20211230004121-org_roam/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:41 +0900</pubDate>
+      <pubDate>Thu, 06 Jan 2022 22:27:38 +0900</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/20211230004121-org_roam/</guid>
       <description>설정 아래 자료를 참고하여 설정한다
@@ -53,7 +53,7 @@ Ox-hugo export all roam to Hugo | Ben Mezger
     <item>
       <title>IFC</title>
       <link>https://jahyun-dev.github.io/notes/20211230165450-ifc/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:40 +0900</pubDate>
+      <pubDate>Thu, 06 Jan 2022 22:27:37 +0900</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/20211230165450-ifc/</guid>
       <description>Industry Foundation Classes IFC는 BIM의 표준 데이터 교환 포맷이다. 건축물의 전체 생애 주기에 걸친 모든 정보를 교환, 공유할 수 있도록 만들어졌다.
@@ -63,20 +63,9 @@ SCHEMA Family; ENTITY Person ABSTRACT SUPERTYPE OF (ONEOF (Male, Female)); name:
     </item>
     
     <item>
-      <title>spacemacs</title>
-      <link>https://jahyun-dev.github.io/notes/20211230015309-spacemacs/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:40 +0900</pubDate>
-      
-      <guid>https://jahyun-dev.github.io/notes/20211230015309-spacemacs/</guid>
-      <description>Layout spacemacs-layouts layer
- SPC l {num} swith to layout {num}  파일 조작 Projectile GitHub - bbatsov/projectile: Project Interaction Library for Emacs
-옵션 폰트 사이즈 수정 (defun dotspacemacs/init () (setq-default dotspacemacs-startup-lists &amp;#39;(recents bookmarks projects) dotspacemacs-default-font &amp;#39;(&amp;#34;SourceCode Pro&amp;#34; :size 18 :weight normal :width normal :powerline-offset 2)) </description>
-    </item>
-    
-    <item>
       <title>메타마스크</title>
       <link>https://jahyun-dev.github.io/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:40 +0900</pubDate>
+      <pubDate>Thu, 06 Jan 2022 22:27:37 +0900</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/</guid>
       <description>f+HUGO_SLUG: 메타마스크
@@ -86,7 +75,7 @@ SCHEMA Family; ENTITY Person ABSTRACT SUPERTYPE OF (ONEOF (Male, Female)); name:
     <item>
       <title>clojure</title>
       <link>https://jahyun-dev.github.io/notes/clojure/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:39 +0900</pubDate>
+      <pubDate>Thu, 06 Jan 2022 22:27:36 +0900</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/clojure/</guid>
       <description>clojure programming language</description>
@@ -95,7 +84,7 @@ SCHEMA Family; ENTITY Person ABSTRACT SUPERTYPE OF (ONEOF (Male, Female)); name:
     <item>
       <title>org-mode</title>
       <link>https://jahyun-dev.github.io/notes/20211230011011-org_mode/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:39 +0900</pubDate>
+      <pubDate>Thu, 06 Jan 2022 22:27:36 +0900</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/20211230011011-org_mode/</guid>
       <description>참고자료  Org mode for Emacs Org Mode - Organize Your Life In Plain Text! My Workflow with Org-Agenda  설정 디렉토리 설정 spacemacs 를 사용하는 경우 user-config 하위에 아래와 같은 설정을 추가해야 한다. (참고: https://www.spacemacs.org/layers/+emacs/org/README.html#important-note)
@@ -105,9 +94,20 @@ todo  * 헤드라인에 TODO 를 붙이면 추가된다  agenda  다양한 종�
     </item>
     
     <item>
+      <title>spacemacs</title>
+      <link>https://jahyun-dev.github.io/notes/20211230015309-spacemacs/</link>
+      <pubDate>Thu, 06 Jan 2022 22:27:36 +0900</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/20211230015309-spacemacs/</guid>
+      <description>Layout spacemacs-layouts layer
+ SPC l {num} swith to layout {num}  파일 조작 Projectile GitHub - bbatsov/projectile: Project Interaction Library for Emacs
+옵션 폰트 사이즈 수정 (defun dotspacemacs/init () (setq-default dotspacemacs-startup-lists &amp;#39;(recents bookmarks projects) dotspacemacs-default-font &amp;#39;(&amp;#34;SourceCode Pro&amp;#34; :size 18 :weight normal :width normal :powerline-offset 2)) </description>
+    </item>
+    
+    <item>
       <title>신년계획</title>
       <link>https://jahyun-dev.github.io/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:39 +0900</pubDate>
+      <pubDate>Thu, 06 Jan 2022 22:27:36 +0900</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/</guid>
       <description>2022년 개발 직장 가정 </description>
@@ -116,7 +116,7 @@ todo  * 헤드라인에 TODO 를 붙이면 추가된다  agenda  다양한 종�
     <item>
       <title>kotlin</title>
       <link>https://jahyun-dev.github.io/notes/20211231013816-kotlin/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:38 +0900</pubDate>
+      <pubDate>Thu, 06 Jan 2022 22:27:35 +0900</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/20211231013816-kotlin/</guid>
       <description>kotlin</description>
@@ -125,7 +125,7 @@ todo  * 헤드라인에 TODO 를 붙이면 추가된다  agenda  다양한 종�
     <item>
       <title>NFT</title>
       <link>https://jahyun-dev.github.io/notes/nft/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:38 +0900</pubDate>
+      <pubDate>Thu, 06 Jan 2022 22:27:35 +0900</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/nft/</guid>
       <description>정의 대체불가토큰
@@ -138,7 +138,7 @@ CryptoArt 블록체인에 등록된 예술. 미디어는 NFT와 연결됨
     <item>
       <title>개발주기</title>
       <link>https://jahyun-dev.github.io/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/</link>
-      <pubDate>Thu, 06 Jan 2022 22:15:38 +0900</pubDate>
+      <pubDate>Thu, 06 Jan 2022 22:27:35 +0900</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/</guid>
       <description>요구사항 분석 why, how, what, who, when
