@@ -1,30 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
+    <head>
 	<meta name="generator" content="Hugo 0.91.2" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BLOG_HOME | DEV-LOG</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-    
-  </head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BLOG_HOME | DEV-LOG</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        
+    </head>
 
-  <body>
-    <nav>
-    <ul class="menu">
-      
-      <li><a href="/">Home</a></li>
-      
-      <li><a href="/tags">Tags</a></li>
-      
-      <li><a href="/notes">Notes</a></li>
-      
-      <li><a href="/blogs">Blogs</a></li>
-      
-    </ul>
-    <hr/>
-    </nav>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    <script>
+     const data = ["/notes/20211230165714-bim/","/blogs/spacemacs_org_roam_blog/","/notes/2021_%EB%8F%85%EC%84%9C/","/notes/20211230013723-emacs/","/notes/20211230004121-org_roam/","/notes/20211230165450-ifc/","/notes/20211230015309-spacemacs/","/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/","/notes/clojure/","/notes/20211230011011-org_mode/","/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/","/notes/20211231013816-kotlin/","/notes/nft/","/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/"];
+     function toRandomPost() {
+         const current = window.location.href
+         const urls = data.filter(x => x !== window.location.href);
+         const selected = urls[Math.floor(Math.random() * urls.length)];
+         location.href = selected;
+     }
+    </script>
+
+    <body>
+        <nav>
+            <ul class="menu">
+                
+                <li><a href="/">Home</a></li>
+                
+                <li><a href="/tags">Tags</a></li>
+                
+                <li><a href="/notes">Notes</a></li>
+                
+                <li><a href="/blogs">Blogs</a></li>
+                
+                <li onclick="toRandomPost()"><a href="javascript:;">Random</a></li>
+            </ul>
+            <hr/>
+        </nav>
 
 
 
@@ -44,6 +88,16 @@
   
   <li>
     <span class="date">2022/01/06</span>
+    <a href="/blogs/spacemacs_org_roam_blog/">스페이스맥스 / ORG-ROAM으로 블로깅하기</a>
+  </li>
+  
+  <li>
+    <span class="date">2022/01/06</span>
+    <a href="/notes/2021_%EB%8F%85%EC%84%9C/">2021-독서</a>
+  </li>
+  
+  <li>
+    <span class="date">2022/01/06</span>
     <a href="/notes/20211230013723-emacs/">emacs</a>
   </li>
   
@@ -54,7 +108,17 @@
   
   <li>
     <span class="date">2022/01/06</span>
-    <a href="/blogs/spacemacs_org_roam_blog/">스페이스맥스 / ORG-ROAM으로 블로깅하기</a>
+    <a href="/notes/20211230165450-ifc/">IFC</a>
+  </li>
+  
+  <li>
+    <span class="date">2022/01/06</span>
+    <a href="/notes/20211230015309-spacemacs/">spacemacs</a>
+  </li>
+  
+  <li>
+    <span class="date">2022/01/06</span>
+    <a href="/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/">메타마스크</a>
   </li>
   
   <li>
@@ -64,7 +128,12 @@
   
   <li>
     <span class="date">2022/01/06</span>
-    <a href="/notes/20211230165450-ifc/">IFC</a>
+    <a href="/notes/20211230011011-org_mode/">org-mode</a>
+  </li>
+  
+  <li>
+    <span class="date">2022/01/06</span>
+    <a href="/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/">신년계획</a>
   </li>
   
   <li>
@@ -79,17 +148,7 @@
   
   <li>
     <span class="date">2022/01/06</span>
-    <a href="/notes/20211230011011-org_mode/">org-mode</a>
-  </li>
-  
-  <li>
-    <span class="date">2022/01/06</span>
-    <a href="/notes/20211230015309-spacemacs/">spacemacs</a>
-  </li>
-  
-  <li>
-    <span class="date">2022/01/06</span>
-    <a href="/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/">메타마스크</a>
+    <a href="/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/">개발주기</a>
   </li>
   
 </ul>
