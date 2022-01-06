@@ -5,43 +5,6 @@
     <link>https://jahyun-dev.github.io/tags/</link>
     <description>Recent content in Tags on DEV-LOG</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-KR</language>
-    <lastBuildDate>Thu, 06 Jan 2022 02:00:09 +0900</lastBuildDate><atom:link href="https://jahyun-dev.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>emacs</title>
-      <link>https://jahyun-dev.github.io/tags/emacs/</link>
-      <pubDate>Thu, 06 Jan 2022 02:00:09 +0900</pubDate>
-      
-      <guid>https://jahyun-dev.github.io/tags/emacs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>roam</title>
-      <link>https://jahyun-dev.github.io/tags/roam/</link>
-      <pubDate>Thu, 06 Jan 2022 02:00:09 +0900</pubDate>
-      
-      <guid>https://jahyun-dev.github.io/tags/roam/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>BIM</title>
-      <link>https://jahyun-dev.github.io/tags/bim/</link>
-      <pubDate>Thu, 06 Jan 2022 02:00:08 +0900</pubDate>
-      
-      <guid>https://jahyun-dev.github.io/tags/bim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>건축</title>
-      <link>https://jahyun-dev.github.io/tags/%EA%B1%B4%EC%B6%95/</link>
-      <pubDate>Thu, 06 Jan 2022 02:00:08 +0900</pubDate>
-      
-      <guid>https://jahyun-dev.github.io/tags/%EA%B1%B4%EC%B6%95/</guid>
-      <description></description>
-    </item>
-    
+    <language>ko-KR</language><atom:link href="https://jahyun-dev.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
