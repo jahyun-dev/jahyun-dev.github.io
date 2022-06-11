@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>spacemacs | DEV-LOG</title>
+        <title>IfcOpenShell | DEV-LOG</title>
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/fonts.css" />
         
@@ -99,23 +99,137 @@
             <hr/>
         </nav>
 
+<div class="article-meta">
+    <h3><span class="title">IfcOpenShell</span></h3>
+    <p class="date">2022/01/10</p>
+</div>
 
+<main>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#build">Build</a></li>
+  </ul>
+</nav>
 
-<h1>spacemacs</h1>
-
-
-
-
+    <p><a href="https://github.com/IfcOpenShell/IfcOpenShell">GitHub - IfcOpenShell/IfcOpenShell: Open source IFC library and geometry engine</a></p>
+<h2 id="build">Build</h2>
+<p>관련 서브모듈을 모두 받아야 한다.</p>
 <ul>
-  
-  
-  
-  <li>
-    <span class="date">2022/01/06</span>
-    <a href="/blogs/spacemacs_org_roam_blog/">스페이스맥스 / ORG-ROAM으로 블로깅하기</a>
-  </li>
-  
+<li>git clone &ndash;recursive</li>
+<li>git submodule update &ndash;init &ndash;recursive.</li>
 </ul>
+<!-- raw HTML omitted -->
+<pre tabindex="0"><code class="language-nil" data-lang="nil">../cmake -DOCC_LIBRARY_DIR=/usr/local/lib \
+      -DOCC_INCLUDE_DIR=/usr/local/include/opencascade \
+      -DCOLLADA_SUPPORT=0 -DBUILD_IFCPYTHON=0 -DBUILD_GEOMSERVER=0 \
+      -DPCRE_LIBRARY_DIR=/usr/lib/x86_64-linux-gnu/ \
+      -DCGAL_INCLUDE_DIR=/usr/include \
+      -DGMP_INCLUDE_DIR=/usr/include \
+      -DMPFR_INCLUDE_DIR=/usr/include \
+      -DGMP_LIBRARY_DIR=/usr/lib/x86_64-linux-gnu \
+      -DMPFR_LIBRARY_DIR=/usr/lib/x86_64-linux-gnu \
+      -DHDF5_SUPPORT=Off
+
+make -j4
+</code></pre>
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+<hr>
+
+
+
+
+    <script src="https://utteranc.es/client.js"
+            repo="jahyun-dev/jahyun-dev.github.io"
+            issue-term="pathname"
+            label="comment"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+</main>
 
   <footer>
   

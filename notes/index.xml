@@ -6,14 +6,165 @@
     <description>Recent content in Notes on DEV-LOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 06 Jan 2022 09:00:00 +0000</lastBuildDate><atom:link href="https://jahyun-dev.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 12:02:57 +0000</lastBuildDate><atom:link href="https://jahyun-dev.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>emacs-kotlin</title>
+      <link>https://jahyun-dev.github.io/notes/emacs_kotlin/</link>
+      <pubDate>Fri, 10 Jun 2022 12:02:57 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/emacs_kotlin/</guid>
+      <description>emacs에 kotlin 개발 환경 설정 spacemacs 기준
+참고 문서 kotlin layer GitHub - fwcd/kotlin-language-server</description>
+    </item>
+    
+    <item>
+      <title>연금</title>
+      <link>https://jahyun-dev.github.io/notes/%EC%97%B0%EA%B8%88/</link>
+      <pubDate>Sun, 17 Apr 2022 17:26:27 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/%EC%97%B0%EA%B8%88/</guid>
+      <description>연금저축, IRP는 55세 이후까지 유지해야 세제혜택 ISA는 만기 짧고 200만 원까지 비과세
+연금저축, IRP 통합 시 자금 인출 제한
+연금저축, IRP는 납입기간(5년 이상) 동안 세액공제를 받는다. 만 55세 이후 연금 수령개시 이후 연금 수령 기간 동안은 연금소득세 5.5~3.3%가 적용된다. 연금 수령 기간은 최소 10년 이상이다. 중도 해지 시 기타소득세 16.5%가 적용된다.
+연소득 6천만원에 700만원 납입 시 세액공제 13.2% 92.4만원 세액공제를 받는다. 운용수익 2% 14만원을 얻어 106.4만원 이득이다. 여기서 연금 수령 시 연금소득세 5.</description>
+    </item>
+    
+    <item>
+      <title>경매</title>
+      <link>https://jahyun-dev.github.io/notes/%EA%B2%BD%EB%A7%A4/</link>
+      <pubDate>Wed, 13 Apr 2022 17:20:30 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/%EA%B2%BD%EB%A7%A4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>기술면접</title>
+      <link>https://jahyun-dev.github.io/notes/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91/</link>
+      <pubDate>Wed, 16 Mar 2022 15:42:38 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91/</guid>
+      <description>노트 경험을 말하도록 프로젝트를 진행하다가 방향이 뭔가 크게 잘못되어 가고 있다고 느꼈던 적이 있었나요? 그 때 얘기를 해주세요. 그 때 그 문제를 해결하기 위해 어떤 액션을 취하셨나요?
+-&amp;gt; 될 수 있으면 직접적인 경험담을 말하도록 유도해야 한다
+피면접자의 최대 퍼포먼스가 드러나도록 읽을만한 애자일 이야기 : 인터뷰에서 진실을 들으려면 애자일 이야기 : 떨어트리는 면접 </description>
+    </item>
+    
+    <item>
+      <title>cpp</title>
+      <link>https://jahyun-dev.github.io/notes/cpp/</link>
+      <pubDate>Tue, 15 Mar 2022 18:48:08 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/cpp/</guid>
+      <description>Build c++ source file -(compile)-&amp;gt; object file
+Preprocess replace the line containing the `#include` directive with the entire content of the included file.
+Compile Link Shared Library 자주 사용하는 외부 함수를 실행 프로그램에 포함하는 경우 덩치가 커지고 업그레이드 시 이를 다시 컴파일해야 함 공유 라이브러리 형식으로 만들어놓고, 컴파일 시점에 사용할 라이브러리를 연결만 하는 방법을 사용
+공유 라이브러리와 연결된 프로그램 실행 시 내부적으로 dyanmic loader 프로그램이 먼저 동작하며,
+dyanamic link 된 공유 라이브러리 찾아 메모리 로딩 entry function 찾아 호출 프로그램 실행 loader는 Shared library를 찾을 때 LD_LIBRARY_PATH 같은 환경변수를 참고</description>
+    </item>
+    
+    <item>
+      <title>2022-독서</title>
+      <link>https://jahyun-dev.github.io/notes/2022_%EB%8F%85%EC%84%9C/</link>
+      <pubDate>Tue, 15 Feb 2022 18:43:38 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/2022_%EB%8F%85%EC%84%9C/</guid>
+      <description>어떻게 경제적 자유를 얻을 것인가 전략적, 전술적 자산 배분
+전체 포트폴리오의 위험과 수입 프로파일 설계 톱다운 전술적인 편입 비중 조정 자산군 내 세부자산 선택 보텀업 진짜 부자 가짜 부자 회계를 배워라
+자산 - 부채 = 자본 수익 - 비용 = 이익
+조달비용보다 투자 수익이 크면 괜찮
+수익과 비용을 구분하는 기준 자동으로 들어오는 시스템 수익은 얼마나 되는가?
+시스템 수익 반자동 수익 노동 수익 투자 수익 기타 수익 지출 구분
+생계 비용 소비지출 주거비 교육비 의료비 교통비 통신비 기타지출 사치 비용 세후실질수익률이 중요</description>
+    </item>
+    
+    <item>
+      <title>전원주택</title>
+      <link>https://jahyun-dev.github.io/notes/%EC%A0%84%EC%9B%90%EC%A3%BC%ED%83%9D/</link>
+      <pubDate>Sun, 30 Jan 2022 14:23:25 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/%EC%A0%84%EC%9B%90%EC%A3%BC%ED%83%9D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>datomic</title>
+      <link>https://jahyun-dev.github.io/notes/datomic/</link>
+      <pubDate>Thu, 13 Jan 2022 11:00:54 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/datomic/</guid>
+      <description>Datomic
+Datalog </description>
+    </item>
+    
+    <item>
+      <title>IfcOpenShell</title>
+      <link>https://jahyun-dev.github.io/notes/ifcopenshell/</link>
+      <pubDate>Mon, 10 Jan 2022 22:06:48 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/ifcopenshell/</guid>
+      <description>GitHub - IfcOpenShell/IfcOpenShell: Open source IFC library and geometry engine
+Build 관련 서브모듈을 모두 받아야 한다.
+git clone &amp;ndash;recursive git submodule update &amp;ndash;init &amp;ndash;recursive. ../cmake -DOCC_LIBRARY_DIR=/usr/local/lib \ -DOCC_INCLUDE_DIR=/usr/local/include/opencascade \ -DCOLLADA_SUPPORT=0 -DBUILD_IFCPYTHON=0 -DBUILD_GEOMSERVER=0 \ -DPCRE_LIBRARY_DIR=/usr/lib/x86_64-linux-gnu/ \ -DCGAL_INCLUDE_DIR=/usr/include \ -DGMP_INCLUDE_DIR=/usr/include \ -DMPFR_INCLUDE_DIR=/usr/include \ -DGMP_LIBRARY_DIR=/usr/lib/x86_64-linux-gnu \ -DMPFR_LIBRARY_DIR=/usr/lib/x86_64-linux-gnu \ -DHDF5_SUPPORT=Off make -j4 </description>
+    </item>
+    
+    <item>
+      <title>API테스트툴</title>
+      <link>https://jahyun-dev.github.io/notes/api%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%88%B4/</link>
+      <pubDate>Mon, 10 Jan 2022 15:08:08 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/api%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%88%B4/</guid>
+      <description>기존 툴 GitHub - apiaryio/dredd: Language-agnostic HTTP API Testing Tool GitHub - vlucas/frisby: Frisby is a REST API testing framework built on Jest &amp;hellip; GitHub - genomoncology/rigor: HTTP-based DSL for for validating RESTful APIs 요구사항 시나리오는 N개의 스텝으로 구성된다 시나리오, 스텝의 스케줄링을 추가할 수 있다. 스텝은 하나의 api다. before, after hook을 추가할 수 있다 openapi 정보를 읽어 API를 선택할 수 있다 API 실행 정보를 저장할 수 있다 시나리오 연달아 실행되는 특정 기능을 테스트하기 위함 시나리오는 N개의 스텝으로 구성 스텝 하나의 요청에 대응 요청 request extract validate transfroom 구현 언어 clj cljs </description>
+    </item>
+    
+    <item>
+      <title>건축</title>
+      <link>https://jahyun-dev.github.io/notes/%EA%B1%B4%EC%B6%95/</link>
+      <pubDate>Fri, 07 Jan 2022 16:44:55 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/%EA%B1%B4%EC%B6%95/</guid>
+      <description>상가주택과 같은 소규모 현장 위주로
+건축 과정 설계 / 개략 견적 공종 가설공사 토공사 기초공사 / 골조공사 건물의 골격을 만드는 공사, 대부분 철근 콘크리트로 구성 착공하기 전 가장 먼저 업체 선정 필요 가장 큰 비중 차지하는 일은 거푸집 조립 작업 골조공사가 되어야 후속 공종인 석공사, 창호공사, 미장공사를 진행 가능 전기공사 설비공사 엘리베이터 공사 석공사 창호공사 </description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://jahyun-dev.github.io/notes/kubernetes/</link>
+      <pubDate>Fri, 07 Jan 2022 12:24:44 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/kubernetes/</guid>
+      <description>명령어 kubectl get namespace
+kubectl config set-context &amp;ndash;current &amp;ndash;namespace=dev</description>
+    </item>
+    
+    <item>
+      <title>건축용어</title>
+      <link>https://jahyun-dev.github.io/notes/%EA%B1%B4%EC%B6%95%EC%9A%A9%EC%96%B4/</link>
+      <pubDate>Thu, 06 Jan 2022 23:06:29 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/%EA%B1%B4%EC%B6%95%EC%9A%A9%EC%96%B4/</guid>
+      <description>용적률 대지면적에 대하여 지하층을 제외한 지상층 면적합계의 비율
+건폐율 대지면적에 대한 건축면적의 비율
+시방서(specification) 공사에 대한 표준안, 규정을 설명. 재료 성질, 특성, 상품 등에 대한 사용법.</description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://jahyun-dev.github.io/notes/git/</link>
+      <pubDate>Thu, 06 Jan 2022 22:59:27 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/git/</guid>
+      <description>여러 Github 계정 사용 Multiple SSH keys for different github accounts · GitHub
+git config에 아래와 같이 계정 정보 설정 필요
+[remote &amp;#34;origin&amp;#34;] url = git@github.com-jahyun-dev:jahyun-dev/blog.git </description>
+    </item>
+    
     <item>
       <title>신년계획</title>
       <link>https://jahyun-dev.github.io/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/</link>
       <pubDate>Thu, 06 Jan 2022 09:00:00 +0000</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/</guid>
-      <description>2022년 개발 직장 가정 </description>
+      <description>2022년 몇 가지에 집중해 퀀텀 리프하기</description>
     </item>
     
     <item>
@@ -22,7 +173,8 @@
       <pubDate>Wed, 05 Jan 2022 10:00:00 +0000</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/20211230165714-bim/</guid>
-      <description>BIM(Building Information Modeling)  3D를 사용해 건설 분야 시설물의 설계, 시공 운영에 필요한 정보 모델을 작성한다 벽, 슬래브, 문 등의 개별 객체에 가격, 수명 등의 값을 저장하는 것이 가능하다 건축물의 견적을 뽑아보거나, 공종 시 오류 발생 여부 등을 시뮬레이션 하거나, 유지 보수 시 정보 체크에도 사용할 수 있다 일정 계획, 비용 견적, 시뮬레이션, 위험 분석, 협업, 효율적 시설 관리 등이 가능하다  학습 곡선이 높고 복잡하므로 적용 시 시간이 걸린다</description>
+      <description>BIM(Building Information Modeling) 3D를 사용해 건설 분야 시설물의 설계, 시공 운영에 필요한 정보 모델을 작성한다 벽, 슬래브, 문 등의 개별 객체에 가격, 수명 등의 값을 저장하는 것이 가능하다 건축물의 견적을 뽑아보거나, 공종 시 오류 발생 여부 등을 시뮬레이션 하거나, 유지 보수 시 정보 체크에도 사용할 수 있다 일정 계획, 비용 견적, 시뮬레이션, 위험 분석, 협업, 효율적 시설 관리 등이 가능하다 학습 곡선이 높고 복잡하므로 적용 시 시간이 걸린다
+IFC(Industry Foundation Class)</description>
     </item>
     
     <item>
@@ -31,7 +183,9 @@
       <pubDate>Wed, 05 Jan 2022 10:00:00 +0000</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/clojure/</guid>
-      <description>clojure programming language</description>
+      <description>clojure programming language
+multimethod 같은 함수 이름, 인자에 따라 다르게 동작하도록 할 때
+(defmulti greeting (fn[x] (x &amp;#34;language&amp;#34;))) (defmethod greeting &amp;#34;English&amp;#34; [params] &amp;#34;Hello!&amp;#34;) (defmethod greeting &amp;#34;French&amp;#34; [params] &amp;#34;Bonjour!&amp;#34;) (def english-map {&amp;#34;id&amp;#34; &amp;#34;1&amp;#34;, &amp;#34;language&amp;#34; &amp;#34;English&amp;#34;}) (def french-map {&amp;#34;id&amp;#34; &amp;#34;2&amp;#34;, &amp;#34;language&amp;#34; &amp;#34;French&amp;#34;}) (greeting english-map) ;; =&amp;gt; &amp;#34;Hello!&amp;#34; (greeting french-map) ;; =&amp;gt; &amp;#34;Bounjour!&amp;#34; </description>
     </item>
     
     <item>
@@ -76,7 +230,7 @@ SCHEMA Family; ENTITY Person ABSTRACT SUPERTYPE OF (ONEOF (Male, Female)); name:
 블로겣인 기술을 이용해서 디지털 자산의 소유주를 증명하는 가상의 토큰 그림, 영상 등의 디지털 파일이나 자산에 복제 및 위조가 불가능한 암호를 증명서로 부팅ㅁ으로 원본성 및 소유권을 나타내는 용도로 사용
 용어 민팅 NFT를 발행 -&amp;gt; 블록체인에 저장되어 출처와 소유권 확인
 CryptoArt 블록체인에 등록된 예술. 미디어는 NFT와 연결됨
-거래 플랫폼  OpenSea, the largest NFT marketplace  문제 bit lot 저작권과 소유권 마켓플레이스의 취약점 환경 참고 툴 </description>
+거래 플랫폼 OpenSea, the largest NFT marketplace 문제 bit lot 저작권과 소유권 마켓플레이스의 취약점 환경 참고 툴 </description>
     </item>
     
     <item>
@@ -85,10 +239,10 @@ CryptoArt 블록체인에 등록된 예술. 미디어는 NFT와 연결됨
       <pubDate>Wed, 05 Jan 2022 10:00:00 +0000</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/20211230011011-org_mode/</guid>
-      <description>참고자료  Org mode for Emacs Org Mode - Organize Your Life In Plain Text! My Workflow with Org-Agenda  설정 디렉토리 설정 spacemacs 를 사용하는 경우 user-config 하위에 아래와 같은 설정을 추가해야 한다. (참고: https://www.spacemacs.org/layers/+emacs/org/README.html#important-note)
+      <description>참고자료 Org mode for Emacs Org Mode - Organize Your Life In Plain Text! My Workflow with Org-Agenda 설정 디렉토리 설정 spacemacs 를 사용하는 경우 user-config 하위에 아래와 같은 설정을 추가해야 한다. (참고: https://www.spacemacs.org/layers/+emacs/org/README.html#important-note)
 (with-eval-after-load &amp;#39;org (setq org-directory &amp;#34;~/org&amp;#34;)) agenda (setq org-agenda-files (quote (&amp;#34;~/org/agenda&amp;#34;))) 참고자료
 journal org-journal을 설치한다
-todo  * 헤드라인에 TODO 를 붙이면 추가된다  agenda  다양한 종류의 아젠다를 만들고 이를 하나 또는 여러 org 문서에서 수집, 관리한다  jorunal org-journal을 사용해 저널 관리 시스템을 만들 수 있다</description>
+todo * 헤드라인에 TODO 를 붙이면 추가된다 agenda 다양한 종류의 아젠다를 만들고 이를 하나 또는 여러 org 문서에서 수집, 관리한다 jorunal org-journal을 사용해 저널 관리 시스템을 만들 수 있다</description>
     </item>
     
     <item>
@@ -111,17 +265,18 @@ Ox-hugo export all roam to Hugo | Ben Mezger
       <pubDate>Wed, 05 Jan 2022 10:00:00 +0000</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/20211230015309-spacemacs/</guid>
-      <description>Layout spacemacs-layouts layer
- SPC l {num} swith to layout {num}  파일 조작 Projectile GitHub - bbatsov/projectile: Project Interaction Library for Emacs
-옵션 폰트 사이즈 수정 (defun dotspacemacs/init () (setq-default dotspacemacs-startup-lists &amp;#39;(recents bookmarks projects) dotspacemacs-default-font &amp;#39;(&amp;#34;SourceCode Pro&amp;#34; :size 18 :weight normal :width normal :powerline-offset 2)) </description>
+      <description>여러 패키지가 합쳐진 이맥스 배포판? evil이라고 편집 시 vi키를 사용한다. 그래서 편하다. 이것저것 패키지도 설치되어 나온다. 그래서 느린 점도 있다. 하지만 일단 편하니까 이걸로 선택해서 해보기로.
+Navigate SPC s j functio browsing C i evil forward https://github.com/syl20bnr/spacemacs/issues/5471#issuecomment-219139613 C O evil backward Layout spacemacs-layouts layer
+SPC l {num} swith to layout {num} File Projectile GitHub - bbatsov/projectile: Project Interaction Library for Emacs
+Tab org 옵션 폰트 사이즈 수정 (defun dotspacemacs/init () (setq-default dotspacemacs-startup-lists &amp;#39;(recents bookmarks projects) dotspacemacs-default-font &amp;#39;(&amp;#34;SourceCode Pro&amp;#34; :size 18 :weight normal :width normal :powerline-offset 2)) LINKS 이맥스와 함께하는 개발환경 : NHN Cloud Meetup James Williams - emacs as ide </description>
     </item>
     
     <item>
       <title>메타마스크</title>
-      <link>https://jahyun-dev.github.io/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/</link>
+      <link>https://jahyun-dev.github.io/notes/20220104032200-%E1%84%86%E1%85%A6%E1%84%90%E1%85%A1%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3/</link>
       <pubDate>Wed, 05 Jan 2022 10:00:00 +0000</pubDate>
       
-      <guid>https://jahyun-dev.github.io/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/</guid>
+      <guid>https://jahyun-dev.github.io/notes/20220104032200-%E1%84%86%E1%85%A6%E1%84%90%E1%85%A1%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3/</guid>
       <description>f+HUGO_SLUG: 메타마스크
 코인 지갑</description>
     </item>
@@ -132,7 +287,7 @@ Ox-hugo export all roam to Hugo | Ben Mezger
       <pubDate>Wed, 05 Jan 2022 09:00:00 +0000</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/2021_%EB%8F%85%EC%84%9C/</guid>
-      <description>개발자로 살아남기 </description>
+      <description>개발자로 살아남기 밑바닥부터 만드는 인터프리터 in Go </description>
     </item>
     
     <item>
@@ -143,6 +298,18 @@ Ox-hugo export all roam to Hugo | Ben Mezger
       <guid>https://jahyun-dev.github.io/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/</guid>
       <description>요구사항 분석 why, how, what, who, when
 시스템 구조 설계 구현 테스트 및 출시 피드백 </description>
+    </item>
+    
+    <item>
+      <title>intepreter</title>
+      <link>https://jahyun-dev.github.io/notes/intepreter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/intepreter/</guid>
+      <description>Lexer 입력 문자열로 토큰을 만들어낸다
+Parser 입력 데이터를 받아 자료구조를 만들어 내는 소프트웨어 컴포넌트 형태는 파스 트리, 추상구문트리일 수 있고 그렇지 않으면 다른 게층 구죙ㄹ수도 자료구조를 만들면서 구조화된 표현을 더하기도 하며, 구문이 올바른지 검사하기도 함
+보통 앞에 어휘 분석기(lexical analyzer)를 따로 두기도 한다
+json parser와의 차이 json 파서는 텍스트를 입력 받아 이를 표현하는 자료구조로 만듬. 언어 파서가 하는 일과 동일. 다른 점이라면 json 파서는 눈으로 보는 것만 자료구조를 알 수 있음</description>
     </item>
     
   </channel>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>spacemacs | DEV-LOG</title>
+        <title>API테스트툴 | DEV-LOG</title>
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/fonts.css" />
         
@@ -99,23 +99,167 @@
             <hr/>
         </nav>
 
+<div class="article-meta">
+    <h3><span class="title">API테스트툴</span></h3>
+    <p class="date">2022/01/10</p>
+</div>
 
+<main>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#기존-툴">기존 툴</a></li>
+    <li><a href="#요구사항">요구사항</a>
+      <ul>
+        <li><a href="#시나리오">시나리오</a></li>
+        <li><a href="#스텝">스텝</a></li>
+        <li><a href="#요청">요청</a></li>
+      </ul>
+    </li>
+    <li><a href="#구현-언어">구현 언어</a></li>
+  </ul>
+</nav>
 
-<h1>spacemacs</h1>
-
-
-
-
+    <h2 id="기존-툴">기존 툴</h2>
 <ul>
-  
-  
-  
-  <li>
-    <span class="date">2022/01/06</span>
-    <a href="/blogs/spacemacs_org_roam_blog/">스페이스맥스 / ORG-ROAM으로 블로깅하기</a>
-  </li>
-  
+<li><a href="https://github.com/apiaryio/dredd">GitHub - apiaryio/dredd: Language-agnostic HTTP API Testing Tool</a></li>
+<li><a href="https://github.com/vlucas/frisby">GitHub - vlucas/frisby: Frisby is a REST API testing framework built on Jest &hellip;</a></li>
+<li><a href="https://github.com/genomoncology/rigor">GitHub - genomoncology/rigor: HTTP-based DSL for for validating RESTful APIs</a></li>
 </ul>
+<h2 id="요구사항">요구사항</h2>
+<ul>
+<li>시나리오는 N개의 스텝으로 구성된다
+<ul>
+<li>시나리오, 스텝의 스케줄링을 추가할 수 있다.</li>
+</ul>
+</li>
+<li>스텝은 하나의 api다.
+<ul>
+<li>before, after hook을 추가할 수 있다</li>
+</ul>
+</li>
+<li>openapi 정보를 읽어 API를 선택할 수 있다</li>
+<li>API 실행 정보를 저장할 수 있다</li>
+</ul>
+<h3 id="시나리오">시나리오</h3>
+<ul>
+<li>연달아 실행되는 특정 기능을 테스트하기 위함</li>
+<li>시나리오는 N개의 스텝으로 구성</li>
+</ul>
+<h3 id="스텝">스텝</h3>
+<ul>
+<li>하나의 요청에 대응</li>
+</ul>
+<h3 id="요청">요청</h3>
+<ul>
+<li>request</li>
+<li>extract</li>
+<li>validate</li>
+<li>transfroom</li>
+</ul>
+<h2 id="구현-언어">구현 언어</h2>
+<ul>
+<li>clj</li>
+<li>cljs</li>
+</ul>
+
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+<hr>
+
+
+
+
+    <script src="https://utteranc.es/client.js"
+            repo="jahyun-dev/jahyun-dev.github.io"
+            issue-term="pathname"
+            label="comment"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+</main>
 
   <footer>
   

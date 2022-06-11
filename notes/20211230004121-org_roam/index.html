@@ -39,11 +39,41 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     
 
     <script>
-     const data = ["/blogs/spacemacs_org_roam_blog/","/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/","/notes/20211230165714-bim/","/notes/clojure/","/notes/20211230013723-emacs/","/notes/20211230165450-ifc/","/notes/20211231013816-kotlin/","/notes/nft/","/notes/20211230011011-org_mode/","/notes/20211230004121-org_roam/","/notes/20211230015309-spacemacs/","/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/","/notes/2021_%EB%8F%85%EC%84%9C/","/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/"];
+     const data = ["/notes/emacs_kotlin/","/notes/%EC%97%B0%EA%B8%88/","/notes/%EA%B2%BD%EB%A7%A4/","/notes/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91/","/notes/cpp/","/notes/2022_%EB%8F%85%EC%84%9C/","/notes/%EC%A0%84%EC%9B%90%EC%A3%BC%ED%83%9D/","/notes/datomic/","/notes/ifcopenshell/","/notes/api%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%88%B4/","/notes/%EA%B1%B4%EC%B6%95/","/notes/kubernetes/","/notes/%EA%B1%B4%EC%B6%95%EC%9A%A9%EC%96%B4/","/notes/git/","/blogs/spacemacs_org_roam_blog/","/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/","/notes/20211230165714-bim/","/notes/clojure/","/notes/20211230013723-emacs/","/notes/20211230165450-ifc/","/notes/20211231013816-kotlin/","/notes/nft/","/notes/20211230011011-org_mode/","/notes/20211230004121-org_roam/","/notes/20211230015309-spacemacs/","/notes/20220104032200-%E1%84%86%E1%85%A6%E1%84%90%E1%85%A1%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3/","/notes/2021_%EB%8F%85%EC%84%9C/","/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/","/notes/intepreter/"];
      function toRandomPost() {
          const current = window.location.href
          const urls = data.filter(x => x !== window.location.href);
@@ -86,27 +116,27 @@
     <h2 id="설정">설정</h2>
 <p>아래 자료를 참고하여 설정한다</p>
 <p><a href="https://org-roam.discourse.group/t/v2-and-spacemacs/1676/5">V2 and spacemacs - #5 by Gp741 - Requests - Org-roam</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package org-roam
-:after org
-:ensure <span style="color:#66d9ef">t</span>
-:custom
-(org-roam-directory  (file-truename <span style="color:#e6db74">&#34;~/orgRoam&#34;</span>) )
-(org-roam-completion-everywhere <span style="color:#66d9ef">t</span>)
-:config
-(org-roam-db-autosync-mode)
-)
-</code></pre></div><h2 id="내보내기">내보내기</h2>
-<p><a href="https://seds.nl/notes/export%5Forg%5Froam%5Fbacklinks%5Fwith%5Fgohugo/">Export org-roam backlinks with Gohugo | Ben Mezger</a> 문서를 참고해서 내보내기 할 수 있다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(use-package org-roam
+</span></span><span style="display:flex;"><span>:after org
+</span></span><span style="display:flex;"><span>:ensure <span style="color:#66d9ef">t</span>
+</span></span><span style="display:flex;"><span>:custom
+</span></span><span style="display:flex;"><span>(org-roam-directory  (file-truename <span style="color:#e6db74">&#34;~/orgRoam&#34;</span>) )
+</span></span><span style="display:flex;"><span>(org-roam-completion-everywhere <span style="color:#66d9ef">t</span>)
+</span></span><span style="display:flex;"><span>:config
+</span></span><span style="display:flex;"><span>(org-roam-db-autosync-mode)
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><h2 id="내보내기">내보내기</h2>
+<p><a href="https://seds.nl/notes/export_org_roam_backlinks_with_gohugo/">Export org-roam backlinks with Gohugo | Ben Mezger</a> 문서를 참고해서 내보내기 할 수 있다.</p>
 <p>전체 내보내기 참고</p>
-<p><a href="https://seds.nl/notes/ox%5Fhugo%5Fexport%5Fall%5Froam%5Fto%5Fhugo/">Ox-hugo export all roam to Hugo | Ben Mezger</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun benmezger/org-roam-export-all ()
-  <span style="color:#e6db74">&#34;Re-exports all Org-roam files to Hugo markdown.&#34;</span>
-  (interactive)
-  (dolist (f (org-roam--list-all-files))
-    (with-current-buffer (find-file f)
-      (when (s-contains? <span style="color:#e6db74">&#34;SETUPFILE&#34;</span> (<span style="color:#a6e22e">buffer-string</span>))
-        (org-hugo-export-wim-to-md)))))
-</code></pre></div><p>저장할 때 filetags와 hugo_tags 싱크하기</p>
+<p><a href="https://seds.nl/notes/ox_hugo_export_all_roam_to_hugo/">Ox-hugo export all roam to Hugo | Ben Mezger</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span>(defun benmezger/org-roam-export-all ()
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;Re-exports all Org-roam files to Hugo markdown.&#34;</span>
+</span></span><span style="display:flex;"><span>  (interactive)
+</span></span><span style="display:flex;"><span>  (dolist (f (org-roam--list-all-files))
+</span></span><span style="display:flex;"><span>    (with-current-buffer (find-file f)
+</span></span><span style="display:flex;"><span>      (when (s-contains? <span style="color:#e6db74">&#34;SETUPFILE&#34;</span> (<span style="color:#a6e22e">buffer-string</span>))
+</span></span><span style="display:flex;"><span>        (org-hugo-export-wim-to-md)))))
+</span></span></code></pre></div><p>저장할 때 filetags와 hugo_tags 싱크하기</p>
 <h2 id="참고자료">참고자료</h2>
 <ul>
 <li><a href="https://www.orgroam.com/manual.html">Org-roam User Manual</a></li>
@@ -149,7 +179,37 @@
     
 
     
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
         
+    
+
     
 
     
