@@ -335,6 +335,19 @@ Tab org 옵션 폰트 사이즈 수정 (defun dotspacemacs/init () (setq-default
     </item>
     
     <item>
+      <title>About</title>
+      <link>https://jahyun-dev.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/about/</guid>
+      <description>만드는 것을 좋아합니다.
+주로 웹서비스를 개발해왔습니다. 사용하는 스택은 아래와 같습니다.
+Java / Kotlin Spring Framework 다음과 같은 언어에 관심이 있습니다.
+Clojure 요샌 이런 관심이 있습니다.
+emacs를 잘 써보고 싶어 공부를 시작했습니다. email: jahyun.dev@gmail.com Linkedin: https://www.linkedin.com/in/koojahyun89/</description>
+    </item>
+    
+    <item>
       <title>intepreter</title>
       <link>https://jahyun-dev.github.io/notes/intepreter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
