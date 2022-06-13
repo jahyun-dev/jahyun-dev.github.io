@@ -6,7 +6,17 @@
     <description>Recent content in Blogs on DEV-LOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 06 Jan 2022 10:00:00 +0000</lastBuildDate><atom:link href="https://jahyun-dev.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jun 2022 14:00:00 +0000</lastBuildDate><atom:link href="https://jahyun-dev.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>양평으로 이사가다</title>
+      <link>https://jahyun-dev.github.io/blogs/%EC%96%91%ED%8F%89%EC%9C%BC%EB%A1%9C_%EC%9D%B4%EC%82%AC%EA%B0%80%EB%8B%A4/</link>
+      <pubDate>Sun, 12 Jun 2022 14:00:00 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/blogs/%EC%96%91%ED%8F%89%EC%9C%BC%EB%A1%9C_%EC%9D%B4%EC%82%AC%EA%B0%80%EB%8B%A4/</guid>
+      <description>2022년 4월 29일 경기도 판교에서 경기도 양평군 양평읍으로 이사를 갔다.
+이사를 가자 기존 집의 곰팡이 문제가 심각. 아이를 키우기에 좋지 않은 환경. 시골 살이에 대한 로망. 아내가 많이 우울해함. 평소 시골로 가고 싶다는 말을 많이함. 아이가 곧 돌이 된다. 뛰어 놀기 좋았으면 전원주택으로 시작 용인과 광주도 생각해보았으나, 이왕 시골로 갈 거면 양평이 낫다고 판단했다. 곰팡이와 육아 문제로 인해 정신이 없어 많은 선택지를 고려할 수 있는 시간이 없었던 것 또한 이유다.</description>
+    </item>
+    
     <item>
       <title>스페이스맥스 / ORG-ROAM으로 블로깅하기</title>
       <link>https://jahyun-dev.github.io/blogs/spacemacs_org_roam_blog/</link>
