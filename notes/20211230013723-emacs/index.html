@@ -69,11 +69,13 @@
     
     
     
+    
+    
 
     
 
     <script>
-     const data = ["/notes/emacs_kotlin/","/notes/%EC%97%B0%EA%B8%88/","/notes/%EA%B2%BD%EB%A7%A4/","/notes/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91/","/notes/cpp/","/notes/2022_%EB%8F%85%EC%84%9C/","/notes/%EC%A0%84%EC%9B%90%EC%A3%BC%ED%83%9D/","/notes/datomic/","/notes/ifcopenshell/","/notes/api%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%88%B4/","/notes/%EA%B1%B4%EC%B6%95/","/notes/kubernetes/","/notes/%EA%B1%B4%EC%B6%95%EC%9A%A9%EC%96%B4/","/notes/git/","/blogs/spacemacs_org_roam_blog/","/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/","/notes/20211230165714-bim/","/notes/clojure/","/notes/20211230013723-emacs/","/notes/20211230165450-ifc/","/notes/20211231013816-kotlin/","/notes/nft/","/notes/20211230011011-org_mode/","/notes/20211230004121-org_roam/","/notes/20211230015309-spacemacs/","/notes/20220104032200-%E1%84%86%E1%85%A6%E1%84%90%E1%85%A1%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3/","/notes/2021_%EB%8F%85%EC%84%9C/","/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/","/notes/intepreter/"];
+     const data = ["/notes/elisp/","/notes/emacs_kotlin/","/notes/%EC%97%B0%EA%B8%88/","/notes/%EA%B2%BD%EB%A7%A4/","/notes/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91/","/notes/cpp/","/notes/2022_%EB%8F%85%EC%84%9C/","/notes/%EC%A0%84%EC%9B%90%EC%A3%BC%ED%83%9D/","/notes/datomic/","/notes/ifcopenshell/","/notes/api%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%88%B4/","/notes/%EA%B1%B4%EC%B6%95/","/notes/kubernetes/","/notes/%EA%B1%B4%EC%B6%95%EC%9A%A9%EC%96%B4/","/notes/git/","/blogs/spacemacs_org_roam_blog/","/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/","/notes/20211230165714-bim/","/notes/clojure/","/notes/20211230013723-emacs/","/notes/20211230165450-ifc/","/notes/20211231013816-kotlin/","/notes/nft/","/notes/20211230011011-org_mode/","/notes/20211230004121-org_roam/","/notes/20211230015309-spacemacs/","/notes/20220104032200-%E1%84%86%E1%85%A6%E1%84%90%E1%85%A1%E1%84%86%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3/","/notes/2021_%EB%8F%85%EC%84%9C/","/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/","/notes/intepreter/"];
      function toRandomPost() {
          const current = window.location.href
          const urls = data.filter(x => x !== window.location.href);
@@ -107,22 +109,64 @@
 <main>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#frame">Frame</a></li>
+    <li><a href="#elisp--20220612231234-elisp-dot-md"><a href="HAHAHUGOSHORTCODE-s0-HBHB">elisp</a></a></li>
+    <li><a href="#buffer-window-frame">buffer, window, frame</a>
+      <ul>
+        <li><a href="#buffer">buffer</a></li>
+        <li><a href="#window">window</a></li>
+        <li><a href="#frame">frame</a></li>
+      </ul>
+    </li>
+    <li><a href="#편집">편집</a></li>
+    <li><a href="#mode">mode</a></li>
     <li><a href="#패키지-관리">패키지 관리</a></li>
     <li><a href="#directory-variable">Directory Variable</a></li>
+    <li><a href="#emacs-google-translate">emacs google translate</a></li>
+    <li><a href="#읽을만한-글">읽을만한 글</a></li>
   </ul>
 </nav>
 
-    <h2 id="frame">Frame</h2>
+    <h2 id="elisp--20220612231234-elisp-dot-md"><a href="/notes/elisp/">elisp</a></h2>
+<p>95% elisp(emacs lisp), 5% c code 로 작성
+성능 및 동시성이 이슈. interpreter가 싱글 스레드로 작동함</p>
+<h2 id="buffer-window-frame">buffer, window, frame</h2>
+<h3 id="buffer">buffer</h3>
+<p>대부분의 편집기가 file 기반. emacs는 모든 file이 buffer임. 하지만 모든 buffer가 file은 아니다.
+emacs에서 buffer는 텍스트 편집 그 이상이다.</p>
+<p>i/o 등의 작업에도 버퍼가 사용된다. <strong>help</strong>, <strong>scratch</strong>, 등등</p>
+<p>emacs에서 buffer는 자료구조다.</p>
+<p>따라서 실제 파일을 편집하는 것이 아니다. 이를 임시 버퍼로 복사하는 것</p>
+<h3 id="window">window</h3>
+<p>buffer는 window 안에 표시된다
+window is just a tiled portion of the frame</p>
+<h3 id="frame">frame</h3>
 <p>window는 buffer를 보여주기 위한 창. window는 frame으로 묶임.</p>
+<h2 id="편집">편집</h2>
+<p>killing -&gt; cutting
+yanking -&gt; pasting
+copying -&gt; saveing to the kill ring</p>
+<ul>
+<li>c+d: 라인 삭제</li>
+<li>undo: C-x u or C-_</li>
+</ul>
+<h2 id="mode">mode</h2>
+<p>majore mode controls how buffers behave.
+each buffer will always have a major mode</p>
 <h2 id="패키지-관리">패키지 관리</h2>
 <p>use-package</p>
 <h2 id="directory-variable">Directory Variable</h2>
 <p><a href="https://www.emacswiki.org/emacs/DirectoryVariables">EmacsWiki: Directory Variables</a></p>
+<h2 id="emacs-google-translate">emacs google translate</h2>
+<h2 id="읽을만한-글">읽을만한 글</h2>
+<ul>
+<li><a href="https://m.blog.naver.com/jodi999/220575002183">1장. Emacs 기본 : 네이버 블로그</a></li>
+</ul>
 
 
     
 
+
+    
 
     
 
