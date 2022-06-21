@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>slash 22 | DEV-LOG</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        
+    </head>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    <script>
+     const data = ["/notes/slash-22/","/posts/2022-06-18t01_50_31.956z/","/notes/elisp/","/blogs/%EC%96%91%ED%8F%89%EC%9C%BC%EB%A1%9C_%EC%9D%B4%EC%82%AC%EA%B0%80%EB%8B%A4/","/notes/emacs_kotlin/","/notes/%EC%97%B0%EA%B8%88/","/notes/%EA%B2%BD%EB%A7%A4/","/notes/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91/","/notes/cpp/","/notes/cpp/","/notes/2022_%EB%8F%85%EC%84%9C/","/notes/2022_%EB%8F%85%EC%84%9C/","/notes/%EC%A0%84%EC%9B%90%EC%A3%BC%ED%83%9D/","/notes/datomic/","/notes/ifcopenshell/","/notes/api%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%88%B4/","/notes/%EA%B1%B4%EC%B6%95/","/notes/kubernetes/","/notes/%EA%B1%B4%EC%B6%95%EC%9A%A9%EC%96%B4/","/notes/git/","/blogs/spacemacs_org_roam_blog/","/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/","/notes/20211230165714-bim/","/notes/clojure/","/notes/20211230013723-emacs/","/notes/20211230165450-ifc/","/notes/20211231013816-kotlin/","/notes/nft/","/notes/20211230011011-org_mode/","/notes/20211230004121-org_roam/","/notes/20211230015309-spacemacs/","/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/","/notes/2021_%EB%8F%85%EC%84%9C/","/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/","/about/","/notes/intepreter/"];
+     function toRandomPost() {
+         const current = window.location.href
+         const urls = data.filter(x => x !== window.location.href);
+         const selected = urls[Math.floor(Math.random() * urls.length)];
+         location.href = selected;
+     }
+    </script>
+
+    <body>
+        <nav>
+            <ul class="menu">
+                
+                <li><a href="/">Home</a></li>
+                
+                <li><a href="/tags">Tags</a></li>
+                
+                <li><a href="/notes">Notes</a></li>
+                
+                <li><a href="/blogs">Blogs</a></li>
+                
+                <li onclick="toRandomPost()"><a href="javascript:;">Random</a></li>
+            </ul>
+            <hr/>
+        </nav>
+
+<div class="article-meta">
+    <h3><span class="title">slash 22</span></h3>
+    <p class="date">2022/06/23</p>
+</div>
+
+<main>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#지속-성장-가능한-코드를-만들어가는-방법">지속 성장 가능한 코드를 만들어가는 방법</a>
+      <ul>
+        <li><a href="#package">package</a></li>
+        <li><a href="#layer">layer</a></li>
+        <li><a href="#module">module</a></li>
+        <li><a href="#결론">결론</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+    <p>토스 개발자 컨퍼런스 간략 정리</p>
+<h2 id="지속-성장-가능한-코드를-만들어가는-방법">지속 성장 가능한 코드를 만들어가는 방법</h2>
+<p><a href="https://www.youtube.com/watch?v=RVO02Z1dLF8&amp;list=PL1DJtS1Hv1PiGXmgruP1_gM2TSvQiOsFL&amp;index=17">토스ㅣSLASH 22 - 지속 성장 가능한 코드를 만들어가는 방법 - YouTube</a></p>
+<p>import를 중심으로 package, layer, module 구조에 대해 알아본다</p>
+<figure><img src="/ox-hugo/2022-06-22_01-37-40_screenshot.png"/>
+</figure>
+
+<p>생성자로 코드가 무엇을 하는지 상상할 수 있다</p>
+<figure><img src="/ox-hugo/2022-06-22_01-39-09_screenshot.png"/>
+</figure>
+
+<h3 id="package">package</h3>
+<p>package 전략은 고정되지 않고 유연해야 한다</p>
+<figure><img src="/ox-hugo/2022-06-22_01-59-28_screenshot.png"/>
+</figure>
+
+<p>card가 응집되지 않음. 역할 대신 개념에 따라 묶는다면</p>
+<figure><img src="/ox-hugo/2022-06-22_02-01-11_screenshot.png"/>
+</figure>
+
+<p>한 패키지에 클래스가 너무 많다면? 응집이 깨지게 된다
+적절한 시점에 개념을 더 세분화해야 한다</p>
+<h3 id="layer">layer</h3>
+<p>토스 페이먼츠 표준 레이어 구조</p>
+<figure><img src="/ox-hugo/2022-06-22_02-03-37_screenshot.png"/>
+</figure>
+
+<p>레이어는 위에서 아래로 순방향으로만 참조되어야 한다
+레이어의 참조 방향이 역류되지 않아야 한다
+레이어를 건너뛰지 않는다</p>
+<p>import 문을 보고 확인할 수 있다</p>
+<h3 id="module">module</h3>
+<figure><img src="/ox-hugo/2022-06-22_02-20-10_screenshot.png"/>
+</figure>
+
+<p>module 분리의 장점</p>
+<ul>
+<li>기술 분리</li>
+<li>모듈 별로 테스트</li>
+<li>역할과 경계를 뚜렷하게 정의</li>
+</ul>
+<p>외부 의존을 줄이려면 모듈을 줄이고 격려하기</p>
+<figure><img src="/ox-hugo/2022-06-22_02-23-23_screenshot.png"/>
+</figure>
+
+<h3 id="결론">결론</h3>
+<p>통제를 기반으로 코드의 제어권을 얻어 지속 성장 가능한 소프트웨어를 효과적이고 안정적으로 만들어낸다.</p>
+
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+<hr>
+
+
+
+
+    <script src="https://utteranc.es/client.js"
+            repo="jahyun-dev/jahyun-dev.github.io"
+            issue-term="pathname"
+            label="comment"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+

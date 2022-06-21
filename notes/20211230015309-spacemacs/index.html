@@ -39,11 +39,55 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     
 
     <script>
-     const data = ["/blogs/spacemacs_org_roam_blog/","/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/","/notes/20211230165714-bim/","/notes/clojure/","/notes/20211230013723-emacs/","/notes/20211230165450-ifc/","/notes/20211231013816-kotlin/","/notes/nft/","/notes/20211230011011-org_mode/","/notes/20211230004121-org_roam/","/notes/20211230015309-spacemacs/","/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/","/notes/2021_%EB%8F%85%EC%84%9C/","/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/"];
+     const data = ["/notes/slash-22/","/posts/2022-06-18t01_50_31.956z/","/notes/elisp/","/blogs/%EC%96%91%ED%8F%89%EC%9C%BC%EB%A1%9C_%EC%9D%B4%EC%82%AC%EA%B0%80%EB%8B%A4/","/notes/emacs_kotlin/","/notes/%EC%97%B0%EA%B8%88/","/notes/%EA%B2%BD%EB%A7%A4/","/notes/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91/","/notes/cpp/","/notes/cpp/","/notes/2022_%EB%8F%85%EC%84%9C/","/notes/2022_%EB%8F%85%EC%84%9C/","/notes/%EC%A0%84%EC%9B%90%EC%A3%BC%ED%83%9D/","/notes/datomic/","/notes/ifcopenshell/","/notes/api%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%88%B4/","/notes/%EA%B1%B4%EC%B6%95/","/notes/kubernetes/","/notes/%EA%B1%B4%EC%B6%95%EC%9A%A9%EC%96%B4/","/notes/git/","/blogs/spacemacs_org_roam_blog/","/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/","/notes/20211230165714-bim/","/notes/clojure/","/notes/20211230013723-emacs/","/notes/20211230165450-ifc/","/notes/20211231013816-kotlin/","/notes/nft/","/notes/20211230011011-org_mode/","/notes/20211230004121-org_roam/","/notes/20211230015309-spacemacs/","/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/","/notes/2021_%EB%8F%85%EC%84%9C/","/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/","/about/","/notes/intepreter/"];
      function toRandomPost() {
          const current = window.location.href
          const urls = data.filter(x => x !== window.location.href);
@@ -77,25 +121,45 @@
 <main>
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#navigate">Navigate</a></li>
     <li><a href="#layout">Layout</a></li>
-    <li><a href="#파일-조작">파일 조작</a></li>
+    <li><a href="#file">File</a></li>
     <li><a href="#projectile">Projectile</a></li>
+    <li><a href="#tab">Tab</a></li>
+    <li><a href="#org">org</a></li>
     <li><a href="#옵션">옵션</a>
       <ul>
         <li><a href="#폰트-사이즈-수정">폰트 사이즈 수정</a></li>
       </ul>
     </li>
+    <li><a href="#links">LINKS</a></li>
   </ul>
 </nav>
 
-    <h2 id="layout">Layout</h2>
+    <p>여러 패키지가 합쳐진 이맥스 배포판?
+evil이라고 편집 시 vi키를 사용한다. 그래서 편하다.
+이것저것 패키지도 설치되어 나온다. 그래서 느린 점도 있다.
+하지만 일단 편하니까 이걸로 선택해서 해보기로.</p>
+<h2 id="navigate">Navigate</h2>
+<ul>
+<li><code>SPC s j</code> functio browsing</li>
+<li><code>C i</code> evil forward
+<ul>
+<li><a href="https://github.com/syl20bnr/spacemacs/issues/5471#issuecomment-219139613">https://github.com/syl20bnr/spacemacs/issues/5471#issuecomment-219139613</a></li>
+</ul>
+</li>
+<li><code>C O</code> evil backward</li>
+</ul>
+<h2 id="layout">Layout</h2>
 <p><a href="https://develop.spacemacs.org/layers/+spacemacs/spacemacs-layouts/README.html#key-bindings">spacemacs-layouts layer</a></p>
 <ul>
 <li><code>SPC l {num}</code> swith to layout {num}</li>
 </ul>
-<h2 id="파일-조작">파일 조작</h2>
+<h2 id="file">File</h2>
 <h2 id="projectile">Projectile</h2>
 <p><a href="https://github.com/bbatsov/projectile">GitHub - bbatsov/projectile: Project Interaction Library for Emacs</a></p>
+<h2 id="tab">Tab</h2>
+<h2 id="org">org</h2>
 <h2 id="옵션">옵션</h2>
 <h3 id="폰트-사이즈-수정">폰트 사이즈 수정</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun dotspacemacs/init ()
@@ -106,10 +170,61 @@
                              :weight normal
                              :width normal
                              :powerline-offset <span style="color:#ae81ff">2</span>))
-</code></pre></div>
+</code></pre></div><h2 id="links">LINKS</h2>
+<ul>
+<li><a href="https://meetup.toast.com/posts/133">이맥스와 함께하는 개발환경 : NHN Cloud Meetup</a></li>
+<li><a href="https://jwill.dev/blog/2022/01/18/EmacsAsIDE-Setup.html">James Williams - emacs as ide</a></li>
+</ul>
+
 
     
 
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -142,9 +257,11 @@
     
 
     
+        
+    
 
     
-        
+
     
 
     
