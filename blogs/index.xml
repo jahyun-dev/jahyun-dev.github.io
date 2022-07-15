@@ -6,7 +6,19 @@
     <description>Recent content in Blogs on DEV-LOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 12 Jun 2022 14:00:00 +0000</lastBuildDate><atom:link href="https://jahyun-dev.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 01:09:32 +0000</lastBuildDate><atom:link href="https://jahyun-dev.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>이맥스를 써보자 1</title>
+      <link>https://jahyun-dev.github.io/blogs/emacs_journey_1/</link>
+      <pubDate>Sat, 16 Jul 2022 01:09:32 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/blogs/emacs_journey_1/</guid>
+      <description>이맥스를 써보려고 함. 기록을 남김.
+emacs를 배워보자 emacs에 호기심이 생겨 요새 취미 삼아 갖고 놀고 있다. 이걸 배워서 업무에 큰 도움이 된다거나, 생산성이 급격하게 좋아지리라곤 기대하지 않는다.
+그저 일에 집중이 안될 때 가끔 문서나 보면서 갖고 노는 중이다. (사실 일하기 싫을때 이런 삽질을 하고 싶어짐)
+VI 키바인딩이 익숙한 편이라 spacemacs 같은 배포판을 설치해서 갖고 놀았는데, 생각보다 쓸만하고 재밌다. 가장 좋았던건 org와 org-roam 패키지다. roam-research를 구독해서 사용중이었지만 웹이다보니 영 불편했다. 웹 상에서 돌아가는 것이다 보니 브라우저를 항상 켜야하고 그러다보니 집중력도 떨어지고, 마우스 때문에 편집도 조금 불편했다.</description>
+    </item>
+    
     <item>
       <title>양평으로 이사가다</title>
       <link>https://jahyun-dev.github.io/blogs/%EC%96%91%ED%8F%89%EC%9C%BC%EB%A1%9C_%EC%9D%B4%EC%82%AC%EA%B0%80%EB%8B%A4/</link>

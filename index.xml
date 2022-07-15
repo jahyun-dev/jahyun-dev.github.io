@@ -6,11 +6,112 @@
     <description>Recent content in BLOG_HOME on DEV-LOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 23 Jun 2022 01:35:50 +0000</lastBuildDate><atom:link href="https://jahyun-dev.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 01:09:32 +0000</lastBuildDate><atom:link href="https://jahyun-dev.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>이맥스를 써보자 1</title>
+      <link>https://jahyun-dev.github.io/blogs/emacs_journey_1/</link>
+      <pubDate>Sat, 16 Jul 2022 01:09:32 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/blogs/emacs_journey_1/</guid>
+      <description>이맥스를 써보려고 함. 기록을 남김.
+emacs를 배워보자 emacs에 호기심이 생겨 요새 취미 삼아 갖고 놀고 있다. 이걸 배워서 업무에 큰 도움이 된다거나, 생산성이 급격하게 좋아지리라곤 기대하지 않는다.
+그저 일에 집중이 안될 때 가끔 문서나 보면서 갖고 노는 중이다. (사실 일하기 싫을때 이런 삽질을 하고 싶어짐)
+VI 키바인딩이 익숙한 편이라 spacemacs 같은 배포판을 설치해서 갖고 놀았는데, 생각보다 쓸만하고 재밌다. 가장 좋았던건 org와 org-roam 패키지다. roam-research를 구독해서 사용중이었지만 웹이다보니 영 불편했다. 웹 상에서 돌아가는 것이다 보니 브라우저를 항상 켜야하고 그러다보니 집중력도 떨어지고, 마우스 때문에 편집도 조금 불편했다.</description>
+    </item>
+    
+    <item>
+      <title>hb-기성금관리</title>
+      <link>https://jahyun-dev.github.io/notes/hb_%EA%B8%B0%EC%84%B1%EA%B8%88%EA%B4%80%EB%A6%AC/</link>
+      <pubDate>Thu, 14 Jul 2022 16:23:11 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/hb_%EA%B8%B0%EC%84%B1%EA%B8%88%EA%B4%80%EB%A6%AC/</guid>
+      <description>기성금 관리 노션 Figma</description>
+    </item>
+    
+    <item>
+      <title>건축공사</title>
+      <link>https://jahyun-dev.github.io/notes/%EA%B1%B4%EC%B6%95%EA%B3%B5%EC%82%AC/</link>
+      <pubDate>Tue, 05 Jul 2022 16:42:39 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/%EA%B1%B4%EC%B6%95%EA%B3%B5%EC%82%AC/</guid>
+      <description>착공 ~ 토공사 공사감리 공사감리란 그 자의 책임하에 공사를 건설도서와 조합하여 그것이 설계도서대로 실시되고 있는지를 확인하는 것 공사가 계약서나 설계도서대로 진행되도록 지도하는 것
+계약 계약서 설계도서
+ 도급계약서 도면 시방서  특기시방서 공사시방서    참고서류
+ 공사내역서 현장설명서 질의응답 종합공정표  가설공사 공사목적물을 완성시키기 위한 효율적인 가설 계획이 세워져있는가?
+ 관계자 외 현장 출입을 제한 낙하방지를 위한 비계  가설계획서? 부지의 효율적인 이용이나 공사가 서로 방해되지 않도록 하는 등, 종합적인 가설계획을 사전에 세우는 것.</description>
+    </item>
+    
+    <item>
+      <title>dev</title>
+      <link>https://jahyun-dev.github.io/notes/dev/</link>
+      <pubDate>Thu, 23 Jun 2022 16:58:13 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/dev/</guid>
+      <description>개발 공부
+Programming Language cpp
+System  os  Algorithm  graph  </description>
+    </item>
+    
+    <item>
+      <title>os</title>
+      <link>https://jahyun-dev.github.io/notes/os/</link>
+      <pubDate>Thu, 23 Jun 2022 16:57:52 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/os/</guid>
+      <description>What is an operating system? Making it easy to run programs Allowing programs to share memory Enabling programs to interact with devices And other fun, interesting things
+Process &amp;lt;/ox-hugo/2022-06-23_17-41-04_PX82iOPpRSy_Nojj6cUsog_ba42e04ce1e84c528ee5866abaf69df1_intro-to-os-1&amp;ndash;virtualization-processes-and-execution-processes.pdf.pdf&amp;gt;
+What is process? A process is just a running application.
+Memory Registers
+Time-sharing allows users to run as many concurrent programs as they like but at the risk of performance loss.
+Process API operating system controls processes using the process api</description>
+    </item>
+    
+    <item>
+      <title>창업</title>
+      <link>https://jahyun-dev.github.io/notes/%EC%B0%BD%EC%97%85/</link>
+      <pubDate>Thu, 23 Jun 2022 16:46:33 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/%EC%B0%BD%EC%97%85/</guid>
+      <description>참고 그린랩스 욕망에 집중하면 큰 돈이 보인다 💰 - YouTube
+네덜란드 사례 한국의 고령화 기존 산업에서 배포되는 제품을 빠르게 개선. 현지 가서 농민 인터뷰. 농장 경영을 효율적으로 -&amp;gt; 데이터 플랫폼을 만들자 FBN: Farmers Business Network 농가 정보를 수집하고 공유해 이를 플랫폼에 올려 네트워크를 만듬</description>
+    </item>
+    
+    <item>
+      <title>graph</title>
+      <link>https://jahyun-dev.github.io/notes/graph/</link>
+      <pubDate>Thu, 23 Jun 2022 00:08:56 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/graph/</guid>
+      <description>무방향 그래프 탐색 DFS(Depth-first search) BFS(Breadth-first search)   단일 원점 최단 경로
+어떤 그래프와 원점 s가 주어졌을때, 그정점에서 다른 정점 v로 가는 경로가 존재하는가? 그렇다면 그 경로들 중 가장 짧은 경로는 무엇인가?
+   연결 컴포넌트  응용 분리 차수(Degrees of separation) 몇 사람 건너 아는 사람인가?
+방향 그래프 정점과 방향을 가진 간선의 집합. 각각의 방향 간 선은 순서를 가진 두 정점 쌍을 연결
+방향 그래프의 `도달성`과 무방향 그래프의 `연결성`을 구분해야 한다.</description>
+    </item>
+    
+    <item>
+      <title>자료구조</title>
+      <link>https://jahyun-dev.github.io/notes/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/</link>
+      <pubDate>Thu, 23 Jun 2022 00:08:34 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/</guid>
+      <description>graph</description>
+    </item>
+    
+    <item>
+      <title>개발자 읽을만한 글 모음</title>
+      <link>https://jahyun-dev.github.io/notes/developer_articles/</link>
+      <pubDate>Wed, 22 Jun 2022 14:59:27 +0000</pubDate>
+      
+      <guid>https://jahyun-dev.github.io/notes/developer_articles/</guid>
+      <description>회고 2021년 CTO 회고 jojoldu님의 인프런 CTO 회고
+나도 어느덧 시니어 연차지만 스스로도 시니어라는 생각이 들지 않는다. 글을 읽으니 과연 이런 사람이라면 시니어라고 부를 수 있겠구나.</description>
+    </item>
+    
     <item>
       <title>slash 22</title>
       <link>https://jahyun-dev.github.io/notes/slash-22/</link>
-      <pubDate>Thu, 23 Jun 2022 01:35:50 +0000</pubDate>
+      <pubDate>Wed, 22 Jun 2022 01:35:50 +0000</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/slash-22/</guid>
       <description>토스 개발자 컨퍼런스 간략 정리
@@ -20,16 +121,6 @@ import를 중심으로 package, layer, module 구조에 대해 알아본다
  package package 전략은 고정되지 않고 유연해야 한다
  card가 응집되지 않음. 역할 대신 개념에 따라 묶는다면
  한 패키지에 클래스가 너무 많다면? 응집이 깨지게 된다 적절한 시점에 개념을 더 세분화해야 한다</description>
-    </item>
-    
-    <item>
-      <title>1인개발</title>
-      <link>https://jahyun-dev.github.io/posts/2022-06-18t01_50_31.956z/</link>
-      <pubDate>Sat, 18 Jun 2022 10:47:51 +0000</pubDate>
-      
-      <guid>https://jahyun-dev.github.io/posts/2022-06-18t01_50_31.956z/</guid>
-      <description>문제 정의 *
-읽을만한 글  How to brainstorm great business ideas  </description>
     </item>
     
     <item>
@@ -99,38 +190,11 @@ import를 중심으로 package, layer, module 구조에 대해 알아본다
       <pubDate>Tue, 15 Mar 2022 18:48:08 +0000</pubDate>
       
       <guid>https://jahyun-dev.github.io/notes/cpp/</guid>
-      <description>Build c++ source file -(compile)-&amp;gt; object file
+      <description>Linking Build c++ source file -(compile)-&amp;gt; object file
 Preprocess replace the line containing the `#include` directive with the entire content of the included file.
 Compile Link Shared Library 자주 사용하는 외부 함수를 실행 프로그램에 포함하는 경우 덩치가 커지고 업그레이드 시 이를 다시 컴파일해야 함 공유 라이브러리 형식으로 만들어놓고, 컴파일 시점에 사용할 라이브러리를 연결만 하는 방법을 사용
 공유 라이브러리와 연결된 프로그램 실행 시 내부적으로 dyanmic loader 프로그램이 먼저 동작하며,
  dyanamic link 된 공유 라이브러리 찾아 메모리 로딩 entry function 찾아 호출 프로그램 실행  loader는 Shared library를 찾을 때 LD_LIBRARY_PATH 같은 환경변수를 참고</description>
-    </item>
-    
-    <item>
-      <title>cpp</title>
-      <link>https://jahyun-dev.github.io/notes/cpp/</link>
-      <pubDate>Tue, 15 Mar 2022 18:48:08 +0000</pubDate>
-      
-      <guid>https://jahyun-dev.github.io/notes/cpp/</guid>
-      <description>Build c++ source file -(compile)-&amp;gt; object file
-Preprocess replace the line containing the `#include` directive with the entire content of the included file.
-Compile Link Shared Library 자주 사용하는 외부 함수를 실행 프로그램에 포함하는 경우 덩치가 커지고 업그레이드 시 이를 다시 컴파일해야 함 공유 라이브러리 형식으로 만들어놓고, 컴파일 시점에 사용할 라이브러리를 연결만 하는 방법을 사용
-공유 라이브러리와 연결된 프로그램 실행 시 내부적으로 dyanmic loader 프로그램이 먼저 동작하며,
- dyanamic link 된 공유 라이브러리 찾아 메모리 로딩 entry function 찾아 호출 프로그램 실행  loader는 Shared library를 찾을 때 LD_LIBRARY_PATH 같은 환경변수를 참고</description>
-    </item>
-    
-    <item>
-      <title>2022-독서</title>
-      <link>https://jahyun-dev.github.io/notes/2022_%EB%8F%85%EC%84%9C/</link>
-      <pubDate>Tue, 15 Feb 2022 18:43:38 +0000</pubDate>
-      
-      <guid>https://jahyun-dev.github.io/notes/2022_%EB%8F%85%EC%84%9C/</guid>
-      <description>어떻게 경제적 자유를 얻을 것인가 전략적, 전술적 자산 배분
- 전체 포트폴리오의 위험과 수입 프로파일 설계 톱다운 전술적인 편입 비중 조정 자산군 내 세부자산 선택 보텀업  진짜 부자 가짜 부자 회계를 배워라
-자산 - 부채 = 자본 수익 - 비용 = 이익
-조달비용보다 투자 수익이 크면 괜찮
-수익과 비용을 구분하는 기준 자동으로 들어오는 시스템 수익은 얼마나 되는가?
- 시스템 수익 반자동 수익 노동 수익 투자 수익 기타 수익  지출 구분</description>
     </item>
     
     <item>
@@ -193,7 +257,8 @@ Build 관련 서브모듈을 모두 받아야 한다.
       
       <guid>https://jahyun-dev.github.io/notes/%EA%B1%B4%EC%B6%95/</guid>
       <description>상가주택과 같은 소규모 현장 위주로
-건축 과정 설계 / 개략 견적 공종 가설공사 토공사 기초공사 / 골조공사  건물의 골격을 만드는 공사, 대부분 철근 콘크리트로 구성 착공하기 전 가장 먼저 업체 선정 필요 가장 큰 비중 차지하는 일은 거푸집 조립 작업 골조공사가 되어야 후속 공종인 석공사, 창호공사, 미장공사를 진행 가능  전기공사 설비공사 엘리베이터 공사 석공사 창호공사  </description>
+건축공사 건축공사
+건축 과정 설계 / 개략 견적 공종 가설공사 토공사 기초공사 / 골조공사  건물의 골격을 만드는 공사, 대부분 철근 콘크리트로 구성 착공하기 전 가장 먼저 업체 선정 필요 가장 큰 비중 차지하는 일은 거푸집 조립 작업 골조공사가 되어야 후속 공종인 석공사, 창호공사, 미장공사를 진행 가능  전기공사 설비공사 엘리베이터 공사 석공사 창호공사 </description>
     </item>
     
     <item>
@@ -224,8 +289,9 @@ kubectl config set-context &amp;ndash;current &amp;ndash;namespace=dev</descript
       
       <guid>https://jahyun-dev.github.io/notes/git/</guid>
       <description>여러 Github 계정 사용 Multiple SSH keys for different github accounts · GitHub
-git config에 아래와 같이 계정 정보 설정 필요
-[remote &amp;quot;origin&amp;quot;] url = git@github.com-jahyun-dev:jahyun-dev/blog.git </description>
+ssh 설정
+Host u1.github.com HostName github.com User git IdentityFile ~/.ssh/id_ed_25519_u1 Host u2.github.com HostName github.com User git IdentityFile ~/.ssh/id_ed_25519_u2 eval &amp;quot;$(ssh-agent -s)&amp;quot; git config에 아래와 같이 계정 정보 설정 필요
+[remote &amp;quot;origin&amp;quot;] url = git@u1.github.com:u1/some-repo.git git remote set-url origin git@u1.github.com:u1/some-repo.git ~</description>
     </item>
     
     <item>

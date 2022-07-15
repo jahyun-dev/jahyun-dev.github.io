@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>graph | DEV-LOG</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YX2EV7XMXK"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YX2EV7XMXK', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    <script>
+     const data = ["/blogs/emacs_journey_1/","/notes/hb_%EA%B8%B0%EC%84%B1%EA%B8%88%EA%B4%80%EB%A6%AC/","/notes/%EA%B1%B4%EC%B6%95%EA%B3%B5%EC%82%AC/","/notes/dev/","/notes/os/","/notes/%EC%B0%BD%EC%97%85/","/notes/graph/","/notes/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/","/notes/developer_articles/","/notes/slash-22/","/notes/elisp/","/blogs/%EC%96%91%ED%8F%89%EC%9C%BC%EB%A1%9C_%EC%9D%B4%EC%82%AC%EA%B0%80%EB%8B%A4/","/notes/emacs_kotlin/","/notes/%EC%97%B0%EA%B8%88/","/notes/%EA%B2%BD%EB%A7%A4/","/notes/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91/","/notes/cpp/","/notes/2022_%EB%8F%85%EC%84%9C/","/notes/%EC%A0%84%EC%9B%90%EC%A3%BC%ED%83%9D/","/notes/datomic/","/notes/ifcopenshell/","/notes/api%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%88%B4/","/notes/%EA%B1%B4%EC%B6%95/","/notes/kubernetes/","/notes/%EA%B1%B4%EC%B6%95%EC%9A%A9%EC%96%B4/","/notes/git/","/blogs/spacemacs_org_roam_blog/","/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/","/notes/20211230165714-bim/","/notes/clojure/","/notes/20211230013723-emacs/","/notes/20211230165450-ifc/","/notes/20211231013816-kotlin/","/notes/nft/","/notes/20211230011011-org_mode/","/notes/20211230004121-org_roam/","/notes/20211230015309-spacemacs/","/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/","/notes/2021_%EB%8F%85%EC%84%9C/","/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/","/about/","/notes/intepreter/"];
+     function toRandomPost() {
+         const current = window.location.href
+         const urls = data.filter(x => x !== window.location.href);
+         const selected = urls[Math.floor(Math.random() * urls.length)];
+         location.href = selected;
+     }
+    </script>
+
+    <body>
+        <nav>
+            <ul class="menu">
+                
+                <li><a href="/">Home</a></li>
+                
+                <li><a href="/about">About</a></li>
+                
+                <li><a href="/tags">Tags</a></li>
+                
+                <li><a href="/notes">Notes</a></li>
+                
+                <li><a href="/blogs">Blogs</a></li>
+                
+                <li onclick="toRandomPost()"><a href="javascript:;">Random</a></li>
+            </ul>
+            <hr/>
+        </nav>
+
+<div class="article-meta">
+    <h3><span class="title">graph</span></h3>
+    <p class="date">2022/06/23</p>
+</div>
+
+<main>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#무방향-그래프">무방향 그래프</a>
+      <ul>
+        <li><a href="#탐색">탐색</a></li>
+        <li><a href="#응용">응용</a></li>
+      </ul>
+    </li>
+    <li><a href="#방향-그래프">방향 그래프</a>
+      <ul>
+        <li><a href="#도달성">도달성</a></li>
+        <li><a href="#순환과-비순환-방향-그래프--directed-acyclic-graph-dag">순환과 비순환 방향 그래프(Directed Acyclic Graph, DAG)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+    <h2 id="무방향-그래프">무방향 그래프</h2>
+<h3 id="탐색">탐색</h3>
+<h4 id="dfs--depth-first-search">DFS(Depth-first search)</h4>
+<h4 id="bfs--breadth-first-search">BFS(Breadth-first search)</h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>단일 원점 최단 경로</p>
+<p>어떤 그래프와 원점 s가 주어졌을때,  그정점에서 다른 정점 v로 가는 경로가 존재하는가? 그렇다면 그 경로들 중 가장 짧은 경로는 무엇인가?</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>연결 컴포넌트</li>
+</ul>
+<h3 id="응용">응용</h3>
+<h4 id="분리-차수--degrees-of-separation">분리 차수(Degrees of separation)</h4>
+<p>몇 사람 건너 아는 사람인가?</p>
+<h2 id="방향-그래프">방향 그래프</h2>
+<p>정점과 방향을 가진 간선의 집합. 각각의 방향 간 선은 순서를 가진 두 정점 쌍을 연결</p>
+<p>방향 그래프의 `도달성`과 무방향 그래프의 `연결성`을 구분해야 한다. 방향 그래프에서 두 정점 간 경로가 존재하는지 알아내는 것은 쉽지 않다.</p>
+<h3 id="도달성">도달성</h3>
+<h4 id="복수-원점-도달성">복수 원점 도달성</h4>
+<p>주어진 방향 그래프와 원점의 집합에 대해, 주어진 정점 v로의 방향 경로가 존재하는 원점이 하나라도 있는가?</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>garbage collection</p>
+<p>정점은 객체, 간선은 그 객체에 대한 참조를 나타내는 방향 그래프로 자바 프로그램의 런타임 메모리 사용 상태를 나타낼 수 있음. `표시하고 훑기` 전략은 비트 하나를 표시용으로 남겨두고, 객체를 정점으로 하는 방향 그래프에 대해 주기적으로 DFS와 같은 알고리즘을 수해해 잠재적으로 참조될 수 있는 객체를 표시. 전체 객체들을 훑어 표시되지 않은 객체들(garbage)를 메모리 재활용을 위해 수집함.</p>
+</li>
+</ul>
+<h3 id="순환과-비순환-방향-그래프--directed-acyclic-graph-dag">순환과 비순환 방향 그래프(Directed Acyclic Graph, DAG)</h3>
+<h4 id="스케줄링-문제">스케줄링 문제</h4>
+<p>작업 스케줄링은 어떤 작업들의 집합과 제약 조건의 집합이 있을 때 제약 조건들을 만족시키도록 작업을 배치하는 문제</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>선행 제약 스케줄링</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>위상 정렬</p>
+<p>어떤 방향 그래프가 주어졌을 때, 모든 정점들이 간선이 가리키는 방향으로만 나열되도록. 즉, 뒤에 있는 정점이 앞에 있는 정점 방향으로 간선이 연결되는 경우가 없도록 정렬 또는 그것이 불가능함을 확인.</p>
+</li>
+</ul>
+
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+<hr>
+
+<div class="bl-section">
+    <h4>이 문서와 연결된</h4>
+    <div class="backlinks">
+        <ul>
+            
+            <li><a href="/notes/dev/">dev</a></li>
+            
+            <li><a href="/notes/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/">자료구조</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+    <script src="https://utteranc.es/client.js"
+            repo="jahyun-dev/jahyun-dev.github.io"
+            issue-term="pathname"
+            label="comment"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+

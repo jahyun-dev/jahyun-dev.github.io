@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>os | DEV-LOG</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YX2EV7XMXK"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-YX2EV7XMXK', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    <script>
+     const data = ["/blogs/emacs_journey_1/","/notes/hb_%EA%B8%B0%EC%84%B1%EA%B8%88%EA%B4%80%EB%A6%AC/","/notes/%EA%B1%B4%EC%B6%95%EA%B3%B5%EC%82%AC/","/notes/dev/","/notes/os/","/notes/%EC%B0%BD%EC%97%85/","/notes/graph/","/notes/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/","/notes/developer_articles/","/notes/slash-22/","/notes/elisp/","/blogs/%EC%96%91%ED%8F%89%EC%9C%BC%EB%A1%9C_%EC%9D%B4%EC%82%AC%EA%B0%80%EB%8B%A4/","/notes/emacs_kotlin/","/notes/%EC%97%B0%EA%B8%88/","/notes/%EA%B2%BD%EB%A7%A4/","/notes/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91/","/notes/cpp/","/notes/2022_%EB%8F%85%EC%84%9C/","/notes/%EC%A0%84%EC%9B%90%EC%A3%BC%ED%83%9D/","/notes/datomic/","/notes/ifcopenshell/","/notes/api%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%88%B4/","/notes/%EA%B1%B4%EC%B6%95/","/notes/kubernetes/","/notes/%EA%B1%B4%EC%B6%95%EC%9A%A9%EC%96%B4/","/notes/git/","/blogs/spacemacs_org_roam_blog/","/notes/%EC%8B%A0%EB%85%84%EA%B3%84%ED%9A%8D/","/notes/20211230165714-bim/","/notes/clojure/","/notes/20211230013723-emacs/","/notes/20211230165450-ifc/","/notes/20211231013816-kotlin/","/notes/nft/","/notes/20211230011011-org_mode/","/notes/20211230004121-org_roam/","/notes/20211230015309-spacemacs/","/notes/20220104032200-%EB%A9%94%ED%83%80%EB%A7%88%EC%8A%A4%ED%81%AC/","/notes/2021_%EB%8F%85%EC%84%9C/","/notes/%EA%B0%9C%EB%B0%9C%EC%A3%BC%EA%B8%B0/","/about/","/notes/intepreter/"];
+     function toRandomPost() {
+         const current = window.location.href
+         const urls = data.filter(x => x !== window.location.href);
+         const selected = urls[Math.floor(Math.random() * urls.length)];
+         location.href = selected;
+     }
+    </script>
+
+    <body>
+        <nav>
+            <ul class="menu">
+                
+                <li><a href="/">Home</a></li>
+                
+                <li><a href="/about">About</a></li>
+                
+                <li><a href="/tags">Tags</a></li>
+                
+                <li><a href="/notes">Notes</a></li>
+                
+                <li><a href="/blogs">Blogs</a></li>
+                
+                <li onclick="toRandomPost()"><a href="javascript:;">Random</a></li>
+            </ul>
+            <hr/>
+        </nav>
+
+<div class="article-meta">
+    <h3><span class="title">os</span></h3>
+    <p class="date">2022/06/23</p>
+</div>
+
+<main>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-an-operating-system">What is an operating system?</a></li>
+    <li><a href="#process">Process</a>
+      <ul>
+        <li><a href="#what-is-process">What is process?</a></li>
+        <li><a href="#time-sharing">Time-sharing</a></li>
+        <li><a href="#process-api">Process API</a></li>
+      </ul>
+    </li>
+    <li><a href="#virtualization">Virtualization</a>
+      <ul>
+        <li><a href="#user-and-kernel-mode">user &amp; kernel mode</a></li>
+        <li><a href="#system-call">system call</a></li>
+        <li><a href="#switching-between-processes">switching between processes</a></li>
+        <li><a href="#context-switch">Context Switch</a></li>
+        <li><a href="#limited-direct-execution">limited direct execution</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+    <h2 id="what-is-an-operating-system">What is an operating system?</h2>
+<p>Making it easy to run programs
+Allowing programs to share memory
+Enabling programs to interact with devices
+And other fun, interesting things</p>
+<h2 id="process">Process</h2>
+<p>&lt;/ox-hugo/2022-06-23_17-41-04_PX82iOPpRSy_Nojj6cUsog_ba42e04ce1e84c528ee5866abaf69df1_intro-to-os-1&ndash;virtualization-processes-and-execution-processes.pdf.pdf&gt;</p>
+<h3 id="what-is-process">What is process?</h3>
+<p>A process is just a running application.</p>
+<p>Memory
+Registers</p>
+<h3 id="time-sharing">Time-sharing</h3>
+<p>allows users to run as many concurrent programs as they like but at the risk of performance loss.</p>
+<h3 id="process-api">Process API</h3>
+<p>operating system controls processes using the process api</p>
+<ul>
+<li>create</li>
+<li>destroy</li>
+<li>wait</li>
+<li>miscellaneous control: pause, resume, &hellip;</li>
+<li>status</li>
+</ul>
+<p>common way to reate a new process in unix-based os: fork(), exec()</p>
+<h4 id="fork">fork()</h4>
+<p>creates a new process
+every process has a <strong>PID(process identifier)</strong></p>
+<h4 id="wait">wait()</h4>
+<h4 id="exec">exec()</h4>
+<p>runs a completely different program</p>
+<h2 id="virtualization">Virtualization</h2>
+<p>os transforms a physical resource into a more general, pwoerful, and user-friendly virtual form.</p>
+<ul>
+<li>how can you virtualize wihtout slowing down the system?</li>
+<li>how can you maintain control while running processes effectively?</li>
+</ul>
+<figure><img src="Virtualization/2022-06-29_19-46-11_media%2F1%2F5cc5fb000c56fb0985a6f5fcae3f152a-5b5a158dcbc9fbfb.gif"/>
+</figure>
+
+<h3 id="user-and-kernel-mode">user &amp; kernel mode</h3>
+<h4 id="user-mode">user mode</h4>
+<p>limits what the code can do</p>
+<h4 id="kernel-mode">kernel mode</h4>
+<p>where the os runs. code in this mode can freely perform privileged operations</p>
+<h3 id="system-call">system call</h3>
+<p>programs running in user mode use system calls to ask for privileged operations from the kernel.</p>
+<ul>
+<li>working with file systems</li>
+<li>starting and terminating processes</li>
+<li>talking with the other processes</li>
+<li>setting aside more memory</li>
+</ul>
+<h4 id="trap">trap</h4>
+<p>the trap instruction jumps into the kernel and switches to kernel mode.</p>
+<p>trap table: a trap table is created during the boot process. machines start in kernel mode so they can perform sensitive tasks. the kernel lets the hardware know about the location of trap handlers</p>
+<figure><img src="/ox-hugo/2022-06-29_20-24-29_LDEProtocol.gif"/>
+</figure>
+
+<p>A trap table tells the hardware what code to run when specific events occur.</p>
+<p>A trap instruction jumps into the kernel and raises the privilege level to kernel-mode, and calls return-from-trap to go back into user-mode.</p>
+<h3 id="switching-between-processes">switching between processes</h3>
+<h4 id="cooperative-approach-waiting-for-system-calls">cooperative approach: waiting for system calls</h4>
+<p>waiting for system calls: a cooperative approach. trusting system processes to occasionally give up control of the CPU in order to perform other tasks.</p>
+<h4 id="non-cooperative-approach-the-os-takes-over">non-cooperative approach: the os takes over</h4>
+<p>A timer-interrupt is a built-in timer that raises an interrupt after a specified number of milliseconds. This signal will stop the current process. The interval is long enough for tasks to complete except for things like an infinite loop.</p>
+<h3 id="context-switch">Context Switch</h3>
+<figure><img src="/ox-hugo/2022-06-29_20-35-08_ldeTimer.gif"/>
+</figure>
+
+<ul>
+<li>The timer interrupts Process A</li>
+<li>Registers are saved to the kernel stack</li>
+<li>The OS switches to Process B</li>
+<li>The system then calls the switch() routine which does three things:
+<ul>
+<li>Saves incoming register values (into the process structure of Process A)</li>
+<li>Restores the registers of Process B (from its process structure)</li>
+<li>Switches context by switching between B and A stacks</li>
+</ul>
+</li>
+<li>The OS exits the trap and restores Process B’s registers and launching the process</li>
+</ul>
+<p>During all of this, there are two types of register saving and restoration that happen:</p>
+<ul>
+<li>With a timer interrupt, the hardware saves the current process’s registers to the kernel stack.</li>
+<li>When the OS switches from A to B, the system saves the kernel registers into memory in the process structure.</li>
+</ul>
+<h3 id="limited-direct-execution">limited direct execution</h3>
+<ul>
+<li>Creating trap handlers at boot time
+<ul>
+<li>Programs cannot alter the trap table</li>
+<li>Use a system call to trap request services from the kernel</li>
+<li>Trap calls save register state as they switch processes</li>
+<li>A return-from-trap instruction is issued after the kernel service is complete</li>
+</ul>
+</li>
+<li>Implementing an interrupt timer
+<ul>
+<li>Hardware timer that can interrupt a process after a specified time</li>
+<li>This is a non-cooperative way to share the CPU</li>
+<li>Context-switching is a result of an interrupt</li>
+</ul>
+</li>
+<li>Running sensitive tasks in a restricted mode
+<ul>
+<li>User mode is restricted as to what a process can do</li>
+<li>Kernel mode gives the process limited access to sensitive tasks</li>
+<li>The modes are changed during trap handling</li>
+</ul>
+</li>
+</ul>
+<p>&lt;/ox-hugo/2022-06-29_21-02-28_RyM3OGniSOCjNzhp4ojg0w_5080c5e0d33b4c5ca8d90d0b08c8a8f1_intro-to-os-1&ndash;virtualization-processes-and-execution-direct-execution.pdf.pdf&gt;</p>
+
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+<hr>
+
+<div class="bl-section">
+    <h4>이 문서와 연결된</h4>
+    <div class="backlinks">
+        <ul>
+            
+            <li><a href="/notes/dev/">dev</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+    <script src="https://utteranc.es/client.js"
+            repo="jahyun-dev/jahyun-dev.github.io"
+            issue-term="pathname"
+            label="comment"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+
