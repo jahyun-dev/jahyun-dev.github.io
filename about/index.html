@@ -18,27 +18,5 @@
     <div class="footer">&copy; 2025 구자현</div>
   </main>
 
-  <script>
-    (function() {
-      const url = "/__reload.json";
-      let last = null;
-      async function poll() {
-        try {
-          const res = await fetch(url, { cache: 'no-store' });
-          const data = await res.json();
-          if (last && data.timestamp && data.timestamp !== last) {
-            location.reload();
-            return;
-          }
-          last = data.timestamp || last;
-        } catch (err) {
-          // ignore
-        }
-        setTimeout(poll, 1000);
-      }
-      poll();
-    })();
-  </script>
-
 </body>
 </html>

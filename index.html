@@ -14,31 +14,9 @@
     <nav class="nav"><a href="/">홈</a><a href="/about/">소개</a></nav>
   </header>
   <main class="container">
-    <h1>글 목록</h1><ul class="post-list"><li><div class="post-title"><a href="/posts/2025-12-29-welcome/">2025 회고</a></div><div class="post-meta">2025-12-29</div><div class="post-excerpt">2025년 회고</div></li></ul>
+    <h1>글 목록</h1><ul class="post-list"><li><div class="post-title"><a href="/posts/2025-12-29-welcome/">2025 회고</a></div><div class="post-meta">2025-12-29</div><div class="post-excerpt">많은 일이 있었다.</div></li></ul>
     <div class="footer">&copy; 2025 구자현</div>
   </main>
-
-  <script>
-    (function() {
-      const url = "/__reload.json";
-      let last = null;
-      async function poll() {
-        try {
-          const res = await fetch(url, { cache: 'no-store' });
-          const data = await res.json();
-          if (last && data.timestamp && data.timestamp !== last) {
-            location.reload();
-            return;
-          }
-          last = data.timestamp || last;
-        } catch (err) {
-          // ignore
-        }
-        setTimeout(poll, 1000);
-      }
-      poll();
-    })();
-  </script>
 
 </body>
 </html>
